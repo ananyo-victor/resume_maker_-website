@@ -1,2 +1,80 @@
 <!-- This is the page after clicking create your resume in the landing page
 It will show to create new cv or continue with the old one -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>heading</title>
+</head>
+
+<body>
+    <nav class="lg:h-14 flex justify-between items-center bg-slate-900">
+        <div class="flex justify-evenly lg:w-48 m-4">
+            <img src="/" alt="w-name" class="w-16 h-9">
+            <p class="font-bold">website name</p>
+        </div>
+        <div class="lg:w-[800px]">
+            <ul class="flex justify-evenly ">
+                <li class="font-bold hover:">Heading</li>
+                <li class="font-bold">Work History</li>
+                <li class="font-bold">Education</li>
+                <li class="font-bold">Skill</li>
+                <li class="font-bold">Summary</li>
+                <li class="font-bold">Review and Download</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="lg:w-[1300px] m-auto">
+        <div class="flex justify-between bg-red-400 mt-5">
+            <div class="">
+                <p class="text-4xl font-bold">Heading</p>
+                <p class="text-lg">Here all the contact information lies</p>
+            </div>
+            <button class="bg-white font-bold text-2xl mx-2">Preview</button>
+        </div>
+        <div class="flex bg-green-400 mt-6">
+            <div> <img src="/" alt="/" class="bg-slate-600 lg:h-48 lg:w-40">
+                <button class="bg-yellow-200 lg:w-40 lg:h-9 mt-4">Upload Photo</button>
+            </div>
+            <div class="lg:w-full">
+                <div class="flex justify-evenly items-center my-4">
+                    <div class=""><label for="First Name">First Name</label><br>
+                        <input type="text" name="First Name" id="" placeholder="First Name" class="lg:w-[340px] lg:h-8 border border-black">
+                    </div>
+                    <div><label for="Middle Name(optional)">Middle Name(optional)</label><br>
+                        <input type="text" name="Middle Name(optional)" id="" placeholder="Middle Name(Optional)" class="lg:w-[340px] lg:h-8 border border-black"></div>
+                    <div><label for="Last Name">Last Name</label><br>
+                        <input type="text" name="Last Name" id="" placeholder="Last Name" class="lg:w-[340px] lg:h-8 border border-black"></div>
+                </div>
+                <div class="flex items-center my-4 justify-evenly">
+                    <div class="flex-col justify-evenly lg:h-52">
+                        <div><label for="Proffession">Proffession</label><br>
+                            <input type="text" name="Proffession" id="" placeholder="Proffession" class=""></div>
+                        <div class="flex justify-evenly items-center">
+                            <div><label for="Country">Country</label><br>
+                                <input type="text" name="Country" id="" placeholder="Country"></div>
+                            <div><label for="City">City</label><br>
+                                <input type="text" name="City" id="" placeholder="City"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="Address">Address</label><br>
+                        <textarea name="Address" id="" cols="45" rows="9" placeholder="Address"></textarea>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div><label for="Phone Number">Phone Number</label><br>
+                        <input type="text" name="Phone Number" id="" placeholder="Phone Number"></div>
+                    <div><label for="Email">Email</label><br>
+                        <input type="email" name="Email" id="" placeholder="Email"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
