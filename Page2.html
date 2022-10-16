@@ -5,3 +5,97 @@ address
 contact
 mail
 and an extra option to addsocial links-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Experience</title>
+  </head>
+
+  <body>
+    <nav class="flex h-16 w-full items-center justify-between md:w-full xl:h-16">
+      <div class="mx-auto xl:hidden">&larr;</div>
+      <div class="mx-auto text-xl font-bold xl:hidden">Work Experience</div>
+      <div class="mx-auto xl:hidden">&rarr;</div>
+      <div class="hide m-4 flex justify-evenly xl:w-48">
+        <img src="/" alt="w-name" class="hide h-9 w-16" />
+        <p class="hide font-bold">website name</p>
+      </div>
+      <div class="hide xl:w-[800px]">
+        <ul class="flex justify-evenly">
+          <li class="hover: cursor-pointer font-bold">Heading</li>
+          <li class="cursor-pointer font-bold xl:text-xl">Work History</li>
+          <li class="cursor-pointer font-bold">Education</li>
+          <li class="cursor-pointer font-bold">Skill</li>
+          <li class="cursor-pointer font-bold">Summary</li>
+          <li class="cursor-pointer font-bold">Review and Download</li>
+        </ul>
+      </div>
+    </nav>
+    <main class="mx-auto max-w-[590px] md:max-w-[680px] xl:max-w-[1200px]">
+      <div class="mt-8 flex items-center justify-between">
+        <div>
+          <p class="text-3xl font-bold xl:text-4xl">Job Experience</p>
+          <p class="my-4 text-xl font-semibold xl:text-xl">Share your job experience from latest to old</p>
+        </div>
+        <button class="mr-4 h-10 w-12 border border-black md:hidden">p</button>
+        <button class="hide2 mr-4 h-10 border border-black text-lg font-semibold md:w-28 xl:hidden">preview</button>
+        <button class="hide mr-4 h-10 border border-black text-lg font-semibold md:w-28 xl:h-12 xl:w-36 xl:text-2xl xl:font-bold">preview</button>
+      </div>
+
+      <!-- Small screen -->
+
+      <div class="w-full" id="we">
+        <div class="border-2 border-black" id="LempJobDiv1">
+          <!-- <div class=" w-full xl:h-14 h-10 flex justify-end items-end" id="closeDiv1">
+            <button class="xl:h-9 xl:w-9 h-7 w-7 xl:mr-8 mr-4 border border-black" id="closeBtn1"></button>
+          </div> -->
+          <div class="mt-7 flex justify-center xl:hidden" id="sEmpDiv1">
+            <input type="text" name="Employeer" id="sEmployeer" placeholder="Employeer" class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            <!-- Small Screen -->
+          </div>
+          <div class="mt-7 flex justify-center xl:hidden" id="sJobDiv1">
+            <input type="text" name="Job Title" id="sJob Title" placeholder="Job Title" class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            <!-- Small Screen -->
+          </div>
+
+          <div class="hide xl:mt-7 xl:flex xl:justify-evenly" id="SempJobDiv1">
+            <div id="lEmpDiv1">
+              <label for="Employeer" class="xl:text-xl xl:font-semibold">Employeer</label><br />
+              <input type="text" name="Employeer" id="lEmployeer" placeholder="Employeer" class="h-16 w-[500px] border border-black pl-2 xl:mt-3 xl:h-16 xl:text-xl" />
+              <!-- Large Screen -->
+            </div>
+            <div id="lJobDiv1">
+              <label for="Job Title" class="xl:text-xl xl:font-semibold">Job Title</label><br />
+              <input type="text" name="Job Title" id="lJob Title" placeholder="Job Title" class="h-16 w-[500px] border border-black pl-2 xl:mt-3 xl:h-16 xl:text-xl" />
+              <!-- Large Screen -->
+            </div>
+          </div>
+
+          <div class="mt-8 flex justify-evenly mb-6" id="StartEndDiv1">
+            <div id="StartDiv1"><label for="Start Date" class="hide xl:text-xl xl:font-semibold">Start Date</label><br /><input type="text" name="Start Date" id="StartDate1" placeholder="Start Date" class="h-16 w-[227px] border border-black pl-2 md:w-[310px] xl:mt-3 xl:h-16 xl:w-[500px] xl:text-xl" /></div>
+
+            <div class="flex flex-col" id="EndAllDiv1">
+              <div id="EndDiv1"><label for="End Date" class="hide xl:text-xl xl:font-semibold">End Date</label><br /><input type="text" name="End Date" id="End Date" placeholder="End Date" class="h-16 w-[227px] border border-black pl-2 md:w-[310px] xl:mt-3 xl:h-16 xl:w-[500px] xl:text-xl" /></div>
+              <span id="EndSpan1" class="my-4 flex w-[170px] justify-between md:w-[220px] xl:w-[230px]"><input type="checkbox" name="Current" id="Current" class="md:w-5 md:border md:border-black" /><label for="Current" class="md:text-xl md:font-semibold xl:text-xl">I currently work here</label></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 flex" id="AddBtn">
+          <button class="w-7 border border-black" onclick="addNewWEField()" id="addBtn1"></button>
+          <p class="ml-5 text-lg font-semibold xl:text-xl">Add more job Experience</p>
+        </div>
+      </div>
+      <div class="mt-10 flex justify-between" id="btnsec">
+        <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="backbtn">&larr; Back</button>
+        <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="nextbtn">Next &rarr;</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

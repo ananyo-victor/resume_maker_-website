@@ -1,1 +1,222 @@
 <!-- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Education</title>
+</head>
+
+<body>
+    <nav class="flex h-16 w-full items-center justify-between bg-yellow-300 md:w-full xl:h-16">
+        <div class="mx-auto xl:hidden">&larr;</div>
+        <div class="mx-auto text-xl font-bold xl:hidden">Education</div>
+        <div class="mx-auto xl:hidden">&rarr;</div>
+        <div class="hide m-4 flex justify-evenly xl:w-48">
+            <img src="/" alt="w-name" class="h-9 w-16 hide " />
+            <p class="font-bold hide">Education</p>
+        </div>
+        <div class="hide xl:w-[800px]">
+            <ul class="flex justify-evenly">
+                <li class="hover: cursor-pointer font-bold">Heading</li>
+                <li class="cursor-pointer font-bold">Work History</li>
+                <li class="cursor-pointer font-bold xl:text-xl">Education</li>
+                <li class="cursor-pointer font-bold">Skill</li>
+                <li class="cursor-pointer font-bold">Summary</li>
+                <li class="cursor-pointer font-bold">Review and Download</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="mx-auto max-w-[590px] md:max-w-[680px] xl:max-w-[1200px]">
+        <div class="mt-8 flex items-center justify-between">
+            <div class="ml-5">
+                <p class="text-3xl font-bold xl:text-4xl">Education</p>
+                <p class="mt-4 text-xl font-semibold xl:text-xl">Here add your academics details</p>
+            </div>
+            <button class="mr-4 h-10 w-12 border border-black md:hidden">p</button>
+            <button class="hide2 mr-4 h-10 border border-black text-lg font-semibold md:w-28 xl:hidden">preview</button>
+            <button
+                class="mr-4 border border-black text-lg font-semibold h-10 md:w-28 xl:h-12 xl:w-36 xl:text-2xl xl:font-bold hide">preview</button>
+        </div>
+
+        <!-- school -->
+        <div class="mt-10 w-full">
+            <p class="ml-2 text-xl font-bold xl:text-4xl">School</p>
+
+            <!-- Small Screens -->
+            <div class="mt-5 flex justify-center xl:hidden">
+                <input type="text" name="Name" id="Name" placeholder="Name"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="City" id="City" placeholder="City"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="State" id="State" placeholder="State"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+
+            <div class="mt-6 flex justify-center xl:hidden">
+                <select name="cars" id="cars"
+                    class="h-16 w-[500px] border border-black pl-2 text-gray-400 md:w-[640px]">
+                    <option value="Degree">Degree</option>
+                    <option value="Class 10">Class 10</option>
+                    <option value="Class 12">Class 12</option>
+                </select>
+            </div>
+
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="Field of Study" id="Field of Study" placeholder="Field of Study"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+
+            <!-- Large Screen -->
+
+
+            <div class="justify-evenly xl:flex xl:flex-col">
+                <div class="hide xl:mt-8 xl:flex xl:justify-evenly">
+                    <div>
+
+                        <label for="Name" class="xl:text-2xl xl:font-semibold">Name</label><br />
+                        <input type="text" name="Name" id="Name" placeholder="Name"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+
+                    <div>
+                        <label for="City" class="xl:text-2xl xl:font-semibold">City</label><br />
+                        <input type="text" name="City" id="City" placeholder="City"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+
+                </div>
+                <div class="hide xl:mt-8 xl:flex xl:justify-evenly">
+
+                    <div>
+                        <label for="Name" class="xl:text-2xl xl:font-semibold">State</label><br />
+                        <input type="text" name="State" id="State" placeholder="State"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+
+                    <div>
+                        <label for="Degree" class="xl:text-2xl xl:font-semibold">Degree</label><br />
+                        <select name="cars" id="cars"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl xl:text-gray-400">
+                            <option value="Degree">Degree</option>
+                            <option value="Class 10">Class 10</option>
+                            <option></option>
+                            <option value="Class 12">Class 12</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="hide xl:mt-8 xl:flex xl:justify-evenly">
+
+                    <div>
+                        <label for="Name" class="xl:text-2xl xl:font-semibold">Field Of Study</label><br />
+                        <input type="text" name="Field Of Study" id="Field Of Study" placeholder="Field Of Study"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+
+                    <div>
+                        <label for="City" class="xl:text-2xl xl:font-semibold">Passing Year</label><br />
+                        <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mt-9 flex">
+                <button class="w-7 border border-black"></button>
+                <p class="md:text-xl md:font-semibold xl:text-xl ml-4">Add another qualification</p>
+            </div>
+
+        </div>
+
+        <!-- college -->
+        <div class="mt-20 w-full">
+            <p class="ml-2 text-xl font-bold xl:text-4xl">College</p>
+
+            <!-- Small Screens -->
+            <div class="mt-5 flex justify-center xl:hidden">
+                <input type="text" name="Name" id="Name" placeholder="Name"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="City" id="City" placeholder="City"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="State" id="State" placeholder="State"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="Field of Study" id="Field of Study" placeholder="Field of Study"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+            <div class="mt-6 flex justify-center xl:hidden">
+                <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
+                    class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
+            </div>
+
+            <!-- Large Screen -->
+            <div class="justify-evenly xl:flex xl:flex-col">
+                <div class="hide xl:mt-8 xl:flex xl:justify-evenly">
+                    <div>
+                        <label for="Name" class="xl:text-2xl xl:font-semibold">Name</label><br />
+                        <input type="text" name="Name" id="Name" placeholder="Name"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+                    <div>
+                        <label for="City" class="xl:text-2xl xl:font-semibold">City</label><br />
+                        <input type="text" name="City" id="City" placeholder="City"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+                </div>
+                <div class="hide xl:mt-8 xl:flex xl:justify-evenly">
+                    <div>
+                        <label for="Name" class="xl:text-2xl xl:font-semibold">State</label><br />
+                        <input type="text" name="State" id="State" placeholder="State"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+                    <div>
+                        <label for="Name" class="xl:text-2xl xl:font-semibold">Field Of Study</label><br />
+                        <input type="text" name="Field Of Study" id="Field Of Study" placeholder="Field Of Study"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+                </div>
+                <div class="hide xl:mt-8 xl:flex xl:ml-16 ">
+                    <div>
+                        <label for="City" class="xl:text-2xl xl:font-semibold">Passing Year</label><br />
+                        <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
+                            class="w-[500px] border border-black pl-2 h-16 xl:mt-3 xl:h-16 xl:text-xl" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-9 flex">
+                <button class="w-7 border border-black"></button>
+                <p class="md:text-xl md:font-semibold xl:text-xl ml-4">Add another qualification</p>
+            </div>
+        </div>
+
+        <div class="flex justify-between mt-16">
+            <button class="xl:text-2xl xl:font-bold border-black border-2 xl:w-36 xl:h-14 hide">&larr; Back</button>
+            <button class="xl:text-2xl xl:font-bold border-black border-2 xl:w-36 xl:h-14 hide">Next &rarr;</button>
+        </div>
+    </main>
+</body>
+
+</html>
