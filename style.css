@@ -1,13 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@media(max-width:1279px){
-    .hide{
-    display: none;
+
+@media(max-width:1279px) {
+    .hide {
+        display: none;
     }
+}
+
+@media(max-width:767px) {
+    .hide2 {
+        display: none;
     }
-    @media(max-width:767px){
-    .hide2{
-    display: none;
+}
+
+@media(max-width : 639px) {
+    .hide3 {
+        display: none;
     }
-    }
+}

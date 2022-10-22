@@ -1,0 +1,149 @@
+<!-- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Education</title>
+  </head>
+
+  <body>
+    <nav class="flex h-16 w-full items-center justify-between bg-yellow-300 md:w-full lg:h-16">
+      <div class="mx-auto lg:hidden">&larr;</div>
+      <div class="mx-auto text-xl font-bold lg:hidden">Summary</div>
+      <div class="mx-auto lg:hidden">&rarr;</div>
+      <div class="hide m-4 flex justify-evenly lg:w-48">
+        <img src="/" alt="w-name" class="hide h-9 w-16" />
+        <p class="hide font-bold">Education</p>
+      </div>
+      <div class="hide lg:w-[800px]">
+        <ul class="flex justify-evenly">
+          <li class="hover: cursor-pointer font-bold">Heading</li>
+          <li class="cursor-pointer font-bold">Work History</li>
+          <li class="cursor-pointer font-bold">Education</li>
+          <li class="cursor-pointer font-bold">Skill</li>
+          <li class="cursor-pointer font-bold lg:text-xl">Summary</li>
+          <li class="cursor-pointer font-bold">Review and Download</li>
+        </ul>
+      </div>
+    </nav>
+    <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px]">
+      <div class="mt-8 flex items-center justify-end">
+        <!-- <div class="ml-5">
+                <p class="text-3xl font-bold lg:text-4xl">Achievement</p>
+                <p class="mt-4 text-xl font-semibold lg:text-xl">Here add your academics details</p>
+            </div> -->
+        <button class="mr-4 h-10 w-12 border border-black md:hidden">p</button>
+        <button class="hide2 mr-4 h-10 border border-black text-lg font-semibold md:w-28 lg:hidden">preview</button>
+        <button class="hide mr-4 h-10 border border-black text-lg font-semibold md:w-28 lg:h-12 lg:w-36 lg:text-2xl lg:font-bold">preview</button>
+      </div>
+
+      <!-- school -->
+      <div class="w-full" id="DivAll">
+        <p class="ml-2 text-3xl font-bold lg:text-4xl">Achievements</p>
+
+        <!-- Small Screens -->
+        <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
+          <div class="mt-5" id="Achievement1">
+            <label for="Name1" class="lg:text-3xl lg:font-semibold hide">Achievement 1</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name1" id="AName1" placeholder="Your Achievements here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          <div class="mt-5" id="Achievement2">
+            <label for="Name2" class="lg:text-3xl lg:font-semibold hide">Achievement 2</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name2" id="AName2" placeholder="Your Achievements here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-9 flex">
+          <button class="w-7 border border-black" onclick="AddNewField()"></button>
+          <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
+        </div>
+      </div>
+        <p class="mt-8 ml-2 text-3xl font-bold lg:text-4xl">Hobbies</p>
+
+        <!-- Small Screens -->
+        <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
+          <div class="mt-5" id="Hobbie1">
+            <label for="Name1" class="lg:text-3xl lg:font-semibold hide">Hobbie 1</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name1" id="HName1" placeholder="Your Hobbies here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          <div class="mt-5" id="Hobbie2">
+            <label for="Name2" class="lg:text-3xl lg:font-semibold hide">Hobbie 2</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name2" id="HName2" placeholder="Your Hobbies here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-9 flex">
+          <button class="w-7 border border-black" onclick="AddNewField()"></button>
+          <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
+        </div>
+      </div>
+        <p class="mt-8 ml-2 text-3xl font-bold lg:text-4xl">Certificates</p>
+
+        <!-- Small Screens -->
+        <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
+          <div class="mt-5" id="Certificate1">
+            <label for="Name1" class="lg:text-3xl lg:font-semibold hide">Certificate 1</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name1" id="CName1" placeholder="Your Certificates here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          <div class="mt-5" id="Certificate2">
+            <label for="Name2" class="lg:text-3xl lg:font-semibold hide">Certificate 2</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name2" id="CName2" placeholder="Your Certificates here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-9 flex">
+          <button class="w-7 border border-black" onclick="AddNewField()"></button>
+          <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
+        </div>
+      </div>
+        <p class="mt-8 ml-2 text-3xl font-bold lg:text-4xl">Projects</p>
+        <!-- Small Screens -->
+        <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
+          <div class="mt-5" id="Project1">
+            <label for="Name" class="lg:text-3xl lg:font-semibold hide">Project 1</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name1" id="PName1" placeholder="Your Projects here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          <div class="mt-5" id="Project2">
+            <label for="Name" class="lg:text-3xl lg:font-semibold hide">Project 2</label><br />
+            <div class="flex lg:mt-10">
+              <input type="text" name="Name2" id="PName2" placeholder="Your Projects here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-9 flex">
+          <button class="w-7 border border-black" onclick="AddNewField()"></button>
+          <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex justify-between" id="btnsec">
+        <button class="hide border-2 border-black lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" id="backbtn">&larr; Back</button>
+        <button class="hide border-2 border-black lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" id="nextbtn">Next &rarr;</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

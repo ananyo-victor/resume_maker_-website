@@ -44,11 +44,11 @@
         </div>
 
         <!-- school -->
-        <div class="mt-10 w-full">
+        <div class="mt-10 w-full" id="schoolDivAll">
             <p class="ml-2 text-xl font-bold xl:text-4xl">School</p>
 
             <!-- Small Screens -->
-            <div class="mt-5 flex justify-center xl:hidden">
+            <div class="mt-5 flex justify-center xl:hidden" id="">
                 <input type="text" name="Name" id="Name" placeholder="Name"
                     class="h-16 w-[500px] border border-black pl-2 md:w-[640px]" />
             </div>
@@ -139,7 +139,7 @@
             </div>
 
             <div class="mt-9 flex">
-                <button class="w-7 border border-black"></button>
+                <button class="w-7 border border-black" onclick="AddNewField()"></button>
                 <p class="md:text-xl md:font-semibold xl:text-xl ml-4">Add another qualification</p>
             </div>
 
@@ -212,11 +212,12 @@
             </div>
         </div>
 
-        <div class="flex justify-between mt-16">
-            <button class="xl:text-2xl xl:font-bold border-black border-2 xl:w-36 xl:h-14 hide">&larr; Back</button>
-            <button class="xl:text-2xl xl:font-bold border-black border-2 xl:w-36 xl:h-14 hide">Next &rarr;</button>
-        </div>
+        <div class="mt-10 flex justify-between" id="btnsec">
+            <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="backbtn">&larr; Back</button>
+            <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="nextbtn">Next &rarr;</button>
+          </div>
     </main>
 </body>
+<script src="script.js"></script>
 
 </html>

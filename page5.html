@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Skills</title>
+</head>
+
+<body>
+  <nav class="flex h-14 w-full items-center justify-between bg-yellow-300 md:w-full xl:h-14">
+    <div class="mx-auto xl:hidden">&larr;</div>
+    <div class="text-xl font-bold xl:hidden">Summary</div>
+    <div class="mx-auto xl:hidden">&rarr;</div>
+    <div class="m-4 flex justify-evenly xl:w-48">
+      <img src="/" alt="w-name" class="hide h-9 w-16" />
+      <p class="hide font-bold">website name</p>
+    </div>
+    <div class="hide xl:w-[800px]">
+      <ul class="flex justify-evenly">
+        <li class="hover: cursor-pointer font-bold">Heading</li>
+        <li class="cursor-pointer font-bold">Work History</li>
+        <li class="cursor-pointer font-bold">Education</li>
+        <li class="cursor-pointer font-bold xl:text-xl">Skill</li>
+        <li class="cursor-pointer font-bold">Summary</li>
+        <li class="cursor-pointer font-bold">Review and Download</li>
+      </ul>
+    </div>
+  </nav>
+  <main class="mx-auto max-w-[590px] md:max-w-[680px] xl:max-w-[1400px]">
+
+    <div class="mt-4 flex w-full">
+      <div id="SmallScreen_1" class=" w-[600px]">
+        <div class="w-full bg-orange-300">
+          <div class="flex h-12 w-full items-center border-2 border-black">
+            <button class="ml-2 h-7 w-7 border border-black"></button>
+            <input type="text" name="Search" id="Search" placeholder="Type here to search"
+              class="ml-3 h-full w-full border-0 text-lg font-bold text-gray-900 pl-3" />
+          </div>
+          <div class="xl:h-[600px] h-[500px] overflow-y-scroll">
+            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+              <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add1()"></button>
+              <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Hardworking and passionate job seeker with strong
+              organizational skills eager to secure entry-levelJob Title position. Ready to help team achieve company goals.">Hardworking and passionate job seeker with strong
+                organizational skills eager to secure entry-level <span class="text-blue-500">Job Title</span> position.
+                Ready to help team achieve company goals.</div>
+            </div>
+            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+              <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add2()"></button>
+              <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Enthusiastic eager to contribute to team success through hard work, attention to detail and excellent
+              organizational skills. Clear understanding of Task and
+              training in. Motivated to learn, grow and excel in.">Enthusiastic <span class="text-blue-500">Job
+                  Title</span> eager to contribute to team success through hard work, attention to detail and excellent
+                organizational skills. Clear understanding of Task <span class="text-blue-500">Job Title</span>and
+                training in <span class="text-blue-500">Skill</span>. Motivated to learn, grow and excel in <span
+                  class="text-blue-500">Industry</span>.</div>
+            </div>
+            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+              <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add3()"></button>
+              <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Dedicated professional with history of meeting company goals utilizing
+            consistent and organized practices. Skilled in working under pressure and adapting to new situations and
+            challenges to best enhance the organizational brand.">Dedicated <span
+                  class="text-blue-500">Industry</span> professional with history of meeting company goals utilizing
+                consistent and organized practices. Skilled in working under pressure and adapting to new situations and
+                challenges to best enhance the organizational brand.</div>
+            </div>
+            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+              <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add4()"></button>
+              <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="To seek and maintain full-time position that
+              offers professional challenges utilizing interpersonal skills, excellent time management and
+              problem-solving skills.">To seek and maintain full-time position that
+                offers professional challenges utilizing interpersonal skills, excellent time management and
+                problem-solving skills.</div>
+            </div>
+            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+              <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add5()"></button>
+              <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Experienced with over  years of experience in. Excellent reputation for resolving problems and improving
+              customer satisfaction.">Experienced <span class="text-blue-500">Job
+                  Title</span> with over <span class="text-blue-500">Number</span> years of experience in <span
+                  class="text-blue-500">Industry</span>. Excellent reputation for resolving problems and improving
+                customer satisfaction.</div>
+            </div>
+            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+              <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add6()"></button>
+              <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Organized and dependable candidate successful at
+              managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to
+              meet team goals.">Organized and dependable candidate successful at
+                managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to
+                meet team goals.</div>
+            </div>
+            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+              <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add7()"></button>
+              <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Reliable employee seeking position. Offering excellent communication and good judgment">Reliable employee seeking <span
+                  class="text-blue-500">Job Title</span> position. Offering excellent communication and good judgment.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 flex justify-center bg-red-500 xl:hidden" onclick="OpenScreen2()">
+          <button class="my-2 text-3xl font-bold">Next</button>
+        </div>
+      </div>
+      <div id="SmallScreen_2" class="flex w-[650px] flex-col bg-yellow-300 hide ml-11">
+        <div class="mb-8 flex items-center justify-between" id="TopicName">
+          <div class="ml-5">
+            <p class="text-3xl font-bold xl:text-4xl">Strength</p>
+            <p class="mt-4 text-xl font-semibold xl:text-xl">Add your every strength here</p>
+          </div>
+          <button class="mr-4 h-10 w-12 border border-black md:hidden">p</button>
+          <button class="hide2 mr-4 h-10 border border-black text-lg font-semibold md:w-28 xl:hidden">preview</button>
+          <button
+            class="hide mr-4 h-10 border border-black text-lg font-semibold md:w-28 xl:h-12 xl:w-36 xl:text-2xl xl:font-bold">preview</button>
+        </div>
+        <div class="mx-auto flex h-[450px] w-[520px] flex-col border border-black">
+          <textarea name="" id="BlankSpaceForStrength" class="mx-auto mt-2 h-[380px] w-[470px] border-0" style="resize: none;"></textarea>
+          <div class="my-auto flex justify-evenly">
+            <button class="h-10 w-10 border-2 border-black" id="bold" onclick="bold()"></button>
+            <button class="h-10 w-10 border-2 border-black" id="italic" onclick="italic()"></button>
+            <button class="h-10 w-10 border-2 border-black" id="underline" onclick="underline()"></button>
+            <button class="h-10 w-10 border-2 border-black" id="numbers" onclick="numbers()"></button>
+            <button class="h-10 w-10 border-2 border-black" id="undo" onclick="undo()"></button>
+            <button class="h-10 w-10 border-2 border-black" id="redo" onclick="redo()"></button>
+          </div>
+        </div>
+        <div class="mt-6 flex h-14 w-[550px] xl:hidden mx-auto">
+          <button class=" mx-auto w-[520px] border-4 border-black text-xl font-bold" onclick="OpenScreen1()">Pre Written
+            Contents</button>
+        </div>
+        <div class="mt-5 flex justify-between" id="btnsec">
+          <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="backbtn">&larr;
+            Back</button>
+          <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="nextbtn">Next
+            &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
