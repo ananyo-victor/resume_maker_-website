@@ -432,3 +432,6 @@ function bold(){
     const boldOB = document.getElementById('BlankSpaceForStrength');
     // boldOB.
 }
+function jsredir() {
+    window.location.href = "Temp1.html";
+  }

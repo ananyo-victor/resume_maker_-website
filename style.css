@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media(max-width:1279px) {
+@media(max-width:1039px) {
     .hide {
         display: none;
     }
@@ -18,4 +17,112 @@
     .hide3 {
         display: none;
     }
+}
+.pink{
+  background-color: #fa859e;
+}
+.pink-border{
+  border-color: #fa859e;
+}
+.pink-text{
+  color: #fa859e;
+}
+.dark-pink{
+  background-color: #f73b64;
+}
+.dark-pink-text{
+color: #f73b64;
+}
+.dark-pink-border{
+  border-color: #f73b64;
+}
+.yellow{
+  background-color: #faf36b;
+}
+.yellow-border{
+  border-color: #faf36b;
+}
+.yellow-text{
+  color: #faf36b;
+}
+.dark-yellow{
+  background-color: #f9e006;
+}
+.dark-yellow-text{
+color: #f9e006;
+}
+.dark-yellow-border{
+  border-color: #f9e006;
+}
+.orange{
+  background-color: #ffa836;
+}
+.orange-border{
+  border-color: #ffa836;
+}
+.orange-text{
+  color: #ffa836;
+}
+.dark-orange{
+  background-color: #ff8000;
+}
+.dark-orange-text{
+  color: #ff8000;
+}
+.dark-orange-border{
+  border-color: #ff8000;
+}
+.green{
+  background-color: #c6f068;
+}
+.green-border{
+  border-color: #c6f068;
+}
+.green-text{
+  color: #c6f068;
+}
+.dark-green{
+  background-color: #648b0e;
+}
+.dark-green-text{
+  color: #85ba12;
+}
+.dark-green-border{
+  border-color: #85ba12;
+}
+.gray{
+  background-color: #c8c8c8;
+}
+.orange-lite{
+  background-color: #ffb369;
+}
+.sky-lite{
+  background-color: #e5fdff;
+}
+.yellow-lite{
+  background-color: #fbf79d;
+}
+.green-lite{
+  background-color: #d2f48b;
+}
+.grad{
+  background: linear-gradient(112deg, #fbf79d, #ffb369, #FCB8C7, #d2f48b) 50% 0 fixed;
+}
+.grad-green{
+  background: linear-gradient(112deg, #d2f48b, #c6f068, #648b0e) 50% 0 fixed;
+}
+.text-grad{
+  color: linear-gradient(112deg, #fbf79d, #ffb369, #FCB8C7, #d2f48b) 50% 0 fixed;
+}
+.transparent-yellow{
+  background-color: rgba(251, 237, 111, 0.5);
+}
+.transparent-green{
+  background-color: rgba(184, 237, 69, 0.6);
+}
+.transparent-pink{
+  background-color: rgba(252, 184, 199, 0.5);
+}
+.transparent-orange{
+  background-color: rgba(255, 167, 51, 0.5);
 }

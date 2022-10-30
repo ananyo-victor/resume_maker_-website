@@ -10,140 +10,147 @@
     <title>Education</title>
   </head>
 
-  <body>
-    <nav class="flex h-16 w-full items-center justify-between bg-yellow-300 md:w-full lg:h-16">
-      <div class="mx-auto lg:hidden">&larr;</div>
-      <div class="mx-auto text-xl font-bold lg:hidden">Summary</div>
-      <div class="mx-auto lg:hidden">&rarr;</div>
-      <div class="hide m-4 flex justify-evenly lg:w-48">
-        <img src="/" alt="w-name" class="hide h-9 w-16" />
-        <p class="hide font-bold">Education</p>
+  <body><div class="grad">
+<nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0">
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&larr;</div>
+      <div class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden" onclick="open()">Skill</div>
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&rarr;</div>
+<span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 overflow-y-scroll h-24 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl hidden">
+  <ul class="flex-col items-center">
+    <li class="text-xl font-bold flex justify-center"><a href="page1.html">Heading</a></</li>
+    <li class="text-xl font-bold flex justify-center mt-3"><a href="page2.html">Work History</a></li>
+    <li class="text-xl font-bold flex justify-center mt-3"><a href="page3.html">Education</a></li>
+    <li class="text-xl font-bold flex justify-center mt-3"><a href="page4.html">Skill</a></li>
+    <li class="text-xl font-bold flex justify-center mt-3">Summ<a href="page5.html">Summary</a></ary</li>
+    <li class="text-xl font-bold flex justify-center my-3"><a href="page6.html">Review and Download</a></li>
+  </ul>
+  </span>
+
+      <div class="hide m-4 flex items-center justify-self-center lg:w-48">
+        <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
+        <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
       </div>
       <div class="hide lg:w-[800px]">
-        <ul class="flex justify-evenly">
-          <li class="hover: cursor-pointer font-bold">Heading</li>
-          <li class="cursor-pointer font-bold">Work History</li>
-          <li class="cursor-pointer font-bold">Education</li>
-          <li class="cursor-pointer font-bold">Skill</li>
-          <li class="cursor-pointer font-bold lg:text-xl">Summary</li>
-          <li class="cursor-pointer font-bold">Review and Download</li>
+        <ul class="flex items-center justify-evenly">
+          <li id="heading" class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-32"><a href="page1.html">Heading</a></li>
+          <li class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-48"><a href="page2.html">Work History</a></li>
+          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-36"><a href="page3.html">Education</a></li>
+          <li class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-yellow-300 hover:text-2xl hover:w-20"><a href="page4.html">Skill</a></li>
+          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-36"><a href="page5.html">Summary</a></li>
+          <li class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-72"><a href="page6.html">Review and Download</a></li>
         </ul>
       </div>
     </nav>
-    <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px]">
+    <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px] pt-20">
       <div class="mt-8 flex items-center justify-end">
-        <!-- <div class="ml-5">
-                <p class="text-3xl font-bold lg:text-4xl">Achievement</p>
-                <p class="mt-4 text-xl font-semibold lg:text-xl">Here add your academics details</p>
-            </div> -->
-        <button class="mr-4 h-10 w-12 border border-black md:hidden">p</button>
-        <button class="hide2 mr-4 h-10 border border-black text-lg font-semibold md:w-28 lg:hidden">preview</button>
-        <button class="hide mr-4 h-10 border border-black text-lg font-semibold md:w-28 lg:h-12 lg:w-36 lg:text-2xl lg:font-bold">preview</button>
+        <button class="mr-4 h-11 w-12 rounded-xl border-4 border-white font-bold hover:bg-white hover:text-pink-300 md:hidden">p</button>
+        <button class="hide2 mr-4 h-10 rounded-xl border-4 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden">preview</button>
+        <button class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold">preview</button>
       </div>
 
-      <!-- school -->
-      <div class="w-full" id="DivAll">
-        <p class="ml-2 text-3xl font-bold lg:text-4xl">Achievements</p>
-
-        <!-- Small Screens -->
-        <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
+      <div class="w-full mt-10" id="DivAll">
+        <div class="border-4 border-white rounded-xl transparent-yellow">
+            <div class="bg-white w-72 h-14 flex justify-center items-center ml-5 mt-5 rounded-xl"><p class="ml-2 text-xl dark-yellow-text font-bold lg:text-4xl">Achievement</p></div>
+        <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px]">
           <div class="mt-5" id="Achievement1">
             <label for="Name1" class="lg:text-3xl lg:font-semibold hide">Achievement 1</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name1" id="AName1" placeholder="Your Achievements here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name1" id="AName1" placeholder="Your Achievements here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           <div class="mt-5" id="Achievement2">
             <label for="Name2" class="lg:text-3xl lg:font-semibold hide">Achievement 2</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name2" id="AName2" placeholder="Your Achievements here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name2" id="AName2" placeholder="Your Achievements here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           </div>
         </div>
 
-        <div class="mt-9 flex">
-          <button class="w-7 border border-black" onclick="AddNewField()"></button>
-          <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
+      </div>
+        <div class="mt-9 flex pl-5 mb-5">
+          <button class="w-7 border border-white rounded-xl" onclick="AddNewField()"></button>
+          <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another achievement</p>
         </div>
       </div>
         <p class="mt-8 ml-2 text-3xl font-bold lg:text-4xl">Hobbies</p>
 
-        <!-- Small Screens -->
         <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
           <div class="mt-5" id="Hobbie1">
             <label for="Name1" class="lg:text-3xl lg:font-semibold hide">Hobbie 1</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name1" id="HName1" placeholder="Your Hobbies here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name1" id="HName1" placeholder="Your Hobbies here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           <div class="mt-5" id="Hobbie2">
             <label for="Name2" class="lg:text-3xl lg:font-semibold hide">Hobbie 2</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name2" id="HName2" placeholder="Your Hobbies here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name2" id="HName2" placeholder="Your Hobbies here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           </div>
         </div>
 
         <div class="mt-9 flex">
-          <button class="w-7 border border-black" onclick="AddNewField()"></button>
+          <button class="w-7 border border-white rounded-xl" onclick="AddNewField()"></button>
           <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
         </div>
       </div>
         <p class="mt-8 ml-2 text-3xl font-bold lg:text-4xl">Certificates</p>
 
-        <!-- Small Screens -->
         <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
           <div class="mt-5" id="Certificate1">
             <label for="Name1" class="lg:text-3xl lg:font-semibold hide">Certificate 1</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name1" id="CName1" placeholder="Your Certificates here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name1" id="CName1" placeholder="Your Certificates here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           <div class="mt-5" id="Certificate2">
             <label for="Name2" class="lg:text-3xl lg:font-semibold hide">Certificate 2</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name2" id="CName2" placeholder="Your Certificates here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name2" id="CName2" placeholder="Your Certificates here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           </div>
         </div>
 
         <div class="mt-9 flex">
-          <button class="w-7 border border-black" onclick="AddNewField()"></button>
+          <button class="w-7 border border-white rounded-xl" onclick="AddNewField()"></button>
           <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
         </div>
       </div>
         <p class="mt-8 ml-2 text-3xl font-bold lg:text-4xl">Projects</p>
-        <!-- Small Screens -->
+        
         <div class="ml-7 lg:mt-10 lg:ml-16 w-[550px] lg:w-[900px] ">
           <div class="mt-5" id="Project1">
             <label for="Name" class="lg:text-3xl lg:font-semibold hide">Project 1</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name1" id="PName1" placeholder="Your Projects here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name1" id="PName1" placeholder="Your Projects here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           <div class="mt-5" id="Project2">
             <label for="Name" class="lg:text-3xl lg:font-semibold hide">Project 2</label><br />
             <div class="flex lg:mt-10">
-              <input type="text" name="Name2" id="PName2" placeholder="Your Projects here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-black pl-2 md:w-[500px] text-2xl" />
-              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-black" onclick="removeElement()"></button>
+              <input type="text" name="Name2" id="PName2" placeholder="Your Projects here" class="h-16 w-[450px] lg:h-20 lg:w-[900px] border border-white rounded-xl pl-2 md:w-[500px] text-2xl" />
+              <button class="ml-7 h-16 w-[70px] lg:h-20 lg:w-[100px] border border-white rounded-xl" onclick="removeElement()"></button>
             </div>
           </div>
         </div>
 
         <div class="mt-9 flex">
-          <button class="w-7 border border-black" onclick="AddNewField()"></button>
+          <button class="w-7 border border-white rounded-xl" onclick="AddNewField()"></button>
           <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another qualification</p>
         </div>
       </div>
-
-      <div class="mt-10 flex justify-between" id="btnsec">
-        <button class="hide border-2 border-black lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" id="backbtn">&larr; Back</button>
-        <button class="hide border-2 border-black lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" id="nextbtn">Next &rarr;</button>
       </div>
+
     </main>
+      <div class="transparent-orange mt-5 flex justify-between rounded-xl border-t-4 border-white" id="btnsec">
+        <button class="hide my-6 mx-10 rounded-xl border-4 border-white hover:bg-white hover:text-orange-400 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" id="backbtn">&larr; Back</button>
+        <button class="hide my-6 mx-10 rounded-xl border-4 border-white hover:bg-white hover:text-orange-400 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" id="nextbtn">Next &rarr;</button>
+      </div>
+    </div>
+    <iframe src="page5.html" frameborder="0" class="hidden"> hi</iframe>
   </body>
   <script src="script.js"></script>
 </html>
