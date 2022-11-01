@@ -11,11 +11,11 @@
 
   <body class="">
     <div class="grad">
-    <nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0">
+    <nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0 shadow-2xl shadow-orange-400">
       <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&larr;</div>
       <div class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden" onclick="open()">Skill</div>
       <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&rarr;</div>
-<span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 overflow-y-scroll h-24 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl hidden">
+    <span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 overflow-y-scroll h-24 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl hidden">
   <ul class="flex-col items-center">
     <li class="text-xl font-bold flex justify-center"><a href="page1.html">Heading</a></</li>
     <li class="text-xl font-bold flex justify-center mt-3"><a href="page2.html">Work History</a></li>
@@ -32,12 +32,12 @@
       </div>
       <div class="hide lg:w-[800px]">
         <ul class="flex items-center justify-evenly">
-          <li id="heading" class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-32"><a href="page1.html">Heading</a></li>
-          <li class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-48"><a href="page2.html">Work History</a></li>
-          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-36"><a href="page3.html">Education</a></li>
-          <li class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-yellow-300 hover:text-2xl hover:w-20"><a href="page4.html">Skill</a></li>
-          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-36"><a href="page5.html">Summary</a></li>
-          <li class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-72"><a href="page6.html">Review and Download</a></li>
+          <li id="heading" class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-32"><a href="page1.html">Heading</a></li>
+          <li class="flex h-9 w-48 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-rose-400 hover:text-2xl hover:w-48"><a href="page2.html">Work History</a></li>
+          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36"><a href="page3.html">Education</a></li>
+          <li class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-20"><a href="page4.html">Skill</a></li>
+          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36"><a href="page5.html">Summary</a></li>
+          <li class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-72"><a href="page6.html">Review and Download</a></li>
         </ul>
       </div>
     </nav>
@@ -65,7 +65,7 @@
             <!-- Small Screen -->
           </div>
 
-          <div class="hide lg:mt-7 lg:flex lg:justify-evenly border-4 border-white lg:py-5 rounded-xl" id="SempJobDiv1">
+          <div class="hide lg:mt-7 lg:flex lg:justify-evenly border-4 border-white transparent-yellow lg:py-5 rounded-xl" id="SempJobDiv1">
             <div id="lEmpDiv1">
               <label for="Employeer" class="lg:text-xl lg:font-semibold">Employeer</label><br />
               <input type="text" name="Employeer" id="lEmployeer" placeholder="Employeer" class="h-16 w-[500px] border-4 border-white pl-2 lg:mt-3 lg:h-16 lg:text-xl rounded-xl" />
@@ -78,7 +78,7 @@
             </div>
           </div>
 
-          <div class="mt-8 flex justify-evenly mb-6 border-4 border-white pt-4 rounded-2xl" id="StartEndDiv1">
+          <div class="mt-8 flex justify-evenly mb-6 border-4 border-white transparent-pink pt-4 rounded-2xl" id="StartEndDiv1">
             <div id="StartDiv1"><label for="Start Date" class="hide lg:text-xl lg:font-semibold">Start Date</label><br /><input type="text" name="Start Date" id="StartDate1" placeholder="Start Date" class="h-16 w-[227px] border-4 border-white rounded-xl pl-2 md:w-[310px] lg:mt-3 lg:h-16 lg:w-[500px] lg:text-xl" /></div>
 
             <div class="flex flex-col" id="EndAllDiv1">

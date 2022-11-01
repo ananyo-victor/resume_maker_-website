@@ -11,87 +11,108 @@ It will show to create new cv or continue with the old one -->
   </head>
 
   <body>
-    <nav class="flex items-center justify-between 2xl:h-14">
-      <div class="m-4 flex justify-evenly 2xl:w-48">
-        <img src="/" alt="w-name" class="h-9 w-16" />
-        <p class="font-bold">website name</p>
+    <div class="grad">
+<nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-2 yellow-border md:w-full lg:h-16 fixed top-0">
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&larr;</div>
+      <div class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl lg:text-xl font-bold hover:bg-white lg:hidden" onclick="open()">Skill</div>
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&rarr;</div>
+<span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 overflow-y-scroll h-24 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl hidden">
+  <ul class="flex-col items-center">
+    <li class="lg:text-xl font-bold flex justify-center"><a href="page1.html">Heading</a></</li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="page2.html">Work History</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="page3.html">Education</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="page4.html">Skill</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3">Summ<a href="page5.html">Summary</a></ary</li>
+    <li class="lg:text-xl font-bold flex justify-center my-3"><a href="page6.html">Review and Download</a></li>
+  </ul>
+  </span>
+      <div class="hide m-4 flex items-center justify-self-center lg:w-48">
+        <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
+        <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
       </div>
-      <div class="2xl:w-[800px]">
-        <ul class="flex justify-evenly">
-          <li class="hover: font-bold">Heading</li>
-          <li class="font-bold">Work History</li>
-          <li class="font-bold">Education</li>
-          <li class="font-bold">Skill</li>
-          <li class="font-bold">Summary</li>
-          <li class="font-bold">Review and Download</li>
+      <div class="hide lg:w-[800px]">
+        <ul class="flex items-center justify-evenly">
+          <li id="heading" class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-32"><a href="page1.html">Heading</a></li>
+          <li class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-48"><a href="page2.html">Work History</a></li>
+          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-36"><a href="page3.html">Education</a></li>
+          <li class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-yellow-300 hover:text-2xl hover:w-20"><a href="page4.html">Skill</a></li>
+          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-36"><a href="page5.html">Summary</a></li>
+          <li class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-yellow-300 hover:text-2xl hover:w-72"><a href="page6.html">Review and Download</a></li>
         </ul>
       </div>
     </nav>
-    <main class="m-auto 2xl:w-[1300px]">
+    <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:w-[1200px] lg:max-w-full pt-20">
       <div class="mt-5 flex justify-between">
         <div class="">
           <p class="text-4xl font-bold">Heading</p>
           <p class="text-lg">Here all the contact information lies</p>
         </div>
-        <button class="mx-2 w-40 border border-black bg-white text-2xl font-bold">Preview</button>
+        <button class="mr-4 h-11 w-12 rounded-xl border-2 border-white font-bold hover:bg-white hover:text-pink-300 md:hidden">p</button>
+        <button class="hide2 mr-4 h-10 rounded-xl border-2 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden">preview</button>
+        <button class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold">preview</button>
       </div>
-      <div class="mt-6 flex">
-        <div class="">
-          <img src="/" alt="/" class="bg-slate-600 2xl:h-48 2xl:w-40" />
-          <button class="mt-4 border border-black text-lg font-bold 2xl:h-9 2xl:w-40">Upload Photo</button>
-        </div>
-        <div class="2xl:w-full">
-          <div class="my-5 flex items-center justify-evenly">
-            <div class="">
-              <label for="First Name" class="text-xl font-semibold">First Name</label><br />
-              <input type="text" name="First Name" id="" placeholder="First Name" class="border border-black pl-2 2xl:h-11 2xl:w-[340px]" />
-            </div>
-            <div>
-              <label for="Middle Name(optional)" class="text-xl font-semibold">Middle Name(optional)</label><br />
-              <input type="text" name="Middle Name(optional)" id="" placeholder="Middle Name(Optional)" class="border border-black pl-2 2xl:h-11 2xl:w-[340px]" />
-            </div>
-            <div>
-              <label for="Last Name" class="text-xl font-semibold">Last Name</label><br />
-              <input type="text" name="Last Name" id="" placeholder="Last Name" class="border border-black pl-2 2xl:h-11 2xl:w-[340px]" />
-            </div>
-          </div>
-          <div class="my-5 flex items-center justify-evenly">
-            <div class="flex flex-col justify-between 2xl:h-48 2xl:w-[600px]">
-              <div class="my-2 ml-4">
-                <label for="Proffession" class="text-xl font-semibold ">Proffession</label><br />
-                <input type="text" name="Proffession" id="" placeholder="Proffession" class="border border-black pl-2 2xl:h-11 2xl:w-[500px]" />
-              </div>
-              <div class="flex items-center justify-evenly 2xl:w-full">
-                <div class="my-2 ml-1">
-                  <label for="Country" class="text-xl font-semibold">Country</label><br />
-                  <input type="text" name="Country" id="" placeholder="Country" class="border border-black pl-2 2xl:h-11 2xl:w-[280px]" />
-                </div>
-                <div>
-                  <label for="City" class="text-xl font-semibold">City</label><br />
-                  <input type="text" name="City" id="" placeholder="City" class="border border-black pl-2 2xl:h-11 2xl:w-[280px]" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <label for="Address" class="text-xl font-semibold">Address</label><br />
-              <textarea name="Address" id="" placeholder="Address" class="border border-black pl-2 2xl:h-40 2xl:w-[500px]"></textarea>
-            </div>
-          </div>
-          <div class="my-5 flex items-center justify-evenly pr-12">
-            <div>
-              <label for="Phone Number" class="text-xl font-semibold">Phone Number</label><br />
-              <input type="text" name="Phone Number" id="" placeholder="Phone Number" class="border border-black pl-2 2xl:h-11 2xl:w-[500px]" />
-            </div>
-            <div>
-              <label for="Email" class="text-xl font-semibold">Email</label><br />
-              <input type="email" name="Email" id="" placeholder="Email" class="border border-black pl-2 2xl:h-11 2xl:w-[500px]" />
-            </div>
+      <div class="mt-6 lg:flex">
+        <div class="bg-slate-600 lg:w-[165px] lg:max-w-[200px]">
+          <img src="/" alt="/" class="bg-slate-600 h-40 w-32 lg:h-48 lg:w-40" />
+          <div class="mt-4 w-full ">
+            <button class="border border-white rounded-xl text-lg font-bold h-9 w-40">Upload Photo</button>
           </div>
         </div>
-      </div>
-      <div class="my-10 flex justify-end">
-        <button class="h-14 w-44 border border-black text-3xl font-bold">Next &rarr;</button>
+        <div class="lg:ml-5 bg-white lg:w-full lg:max-w-[1000px]">
+          <div class="my-5 flex items-center">   <!-- Upper Portion -->
+            <div class="mx-auto">
+              <label for="First Name" class="hide lg:text-xl lg:font-semibold">First Name</label><br />
+              <input type="text" name="First Name" id="" placeholder="First Name" class="pl-3 bg-black mt-3 border border-white rounded-xl h-16 w-60 lg:w-[280px] max-w-[326px]" />
+            </div>
+            <div class="mx-auto hide">
+              <label for="Middle Name(optional)" class="lg:text-xl lg:font-semibold">Middle Name (optional)</label><br />
+              <input type="text" name="Middle Name(optional)" id="" placeholder="Middle Name(Optional)" class="pl-3 bg-black mt-3 border border-white rounded-xl lg:h-16 lg:w-[280px] max-w-[326px]" />
+            </div>
+            <div class="mx-auto">
+              <label for="Last Name" class="hide lg:text-xl lg:font-semibold">Last Name</label><br />
+              <input type="text" name="Last Name" id="" placeholder="Last Name" class="pl-3 bg-black mt-3 border border-white rounded-xl h-16 w-60 lg:w-[280px] max-w-[326px]" />
+            </div>
+          </div>
+          <div class="my-5 flex items-center justify-evenly">
+            <div class="flex flex-col justify-between">
+              <div class="lg:w-[420px] max-w-[500px] lg:ml-2">
+                <label for="Proffession" class="hide lg:text-xl lg:font-semibold ">Proffession</label><br />
+                <input type="text" name="Proffession" id="" placeholder="Proffession" class="pl-3 bg-black mt-3 border border-white rounded-xl h-16 lg:w-[420px] max-w-[]" />
+              </div>
+              <div class="mt-5 flex items-center justify-between lg:w-full">
+                <div class="lg:w-[210px] max-w-[250px] mx-auto ">
+                  <label for="Country" class="hide lg:text-xl lg:font-semibold">Country</label><br />
+                  <input type="text" name="Country" id="" placeholder="Country" class="pl-3 bg-black mt-3 border border-white rounded-xl h-16 lg:w-[240px] max-w-full" />
+                </div>
+                <div class="lg:w-[210px] max-w-[250px] mx-auto">
+                  <label for="City" class="hide lg:text-xl lg:font-semibold">City</label><br />
+                  <input type="text" name="City" id="" placeholder="City" class="pl-3 bg-black mt-3 border border-white rounded-xl h-16 lg:w-[240px] max-w-full" />
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[420px] max-w-[500px]">
+              <label for="Address" class="hide lg:text-xl lg:font-semibold">Address</label><br />
+              <textarea name="Address" id="" placeholder="Address" class="pl-3 bg-black mt-3 border border-white rounded-xl h-48 lg:w-[420px] max-w-[500px]" style="resize:none;"></textarea>
+            </div>
+          </div>
+          <div class="my-5 flex items-center">
+            <div class=" lg:w-[420px] max-w-[500px] mx-auto">
+              <label for="Phone Number" class="lg:text-xl lg:font-semibold">Phone Number</label><br />
+              <input type="text" name="Phone Number" id="" placeholder="Phone Number" class="pl-3 bg-black mt-3 border border-white rounded-xl lg:h-16 lg:w-[420px] max-w-[490px]" />
+            </div>
+            <div class=" lg:w-[420px] max-w-[500px] mx-auto">
+              <label for="Email" class="lg:text-xl lg:font-semibold">Email</label><br />
+              <input type="email" name="Email" id="" placeholder="Email" class="pl-3 bg-black mt-3 border border-white rounded-xl lg:h-16 lg:w-[420px] max-w-[]" />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+      <div class="mt-5 flex justify-end border-t-4 border-white transparent-orange rounded-xl" id="btnsec">
+        <!-- <button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="backbtn">&larr; Back</button> -->
+        <button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="nextbtn">Next &rarr;</button>
+      </div>
+    </div>
   </body>
 </html>
+mr-
