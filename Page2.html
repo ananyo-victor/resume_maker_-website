@@ -9,23 +9,22 @@
     <title>Work Experience</title>
   </head>
 
-  <body class="">
+  <body>
     <div class="grad">
-    <nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0 shadow-2xl shadow-orange-400">
-      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&larr;</div>
-      <div class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden" onclick="open()">Skill</div>
-      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden">&rarr;</div>
-    <span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 overflow-y-scroll h-24 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl hidden">
-  <ul class="flex-col items-center">
-    <li class="text-xl font-bold flex justify-center"><a href="page1.html">Heading</a></</li>
-    <li class="text-xl font-bold flex justify-center mt-3"><a href="page2.html">Work History</a></li>
-    <li class="text-xl font-bold flex justify-center mt-3"><a href="page3.html">Education</a></li>
-    <li class="text-xl font-bold flex justify-center mt-3"><a href="page4.html">Skill</a></li>
-    <li class="text-xl font-bold flex justify-center mt-3">Summ<a href="page5.html">Summary</a></ary</li>
-    <li class="text-xl font-bold flex justify-center my-3"><a href="page6.html">Review and Download</a></li>
+    <nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0 shadow-xl">
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a href="page1.html">&larr;</a></div>
+      <button class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden" onclick="open1()">Work Experience</button>
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a href="page3.html">&rarr;</a></div>
+    <span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 h-60 left-[50%] translate-x-[-50%] yellow-lite  yellow-border hidden rounded-xl shadow-2xl ">
+  <ul class="flex-col items-center px-4">
+    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="page1.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Heading</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3 text-2xl" ><a href="page2.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl" onclick="open1()">Work History</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="page3.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Education</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="page4.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Skill</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="page5.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Summary</a></ary</li>
+    <li class="lg:text-xl font-bold flex justify-center my-3 "><a href="page6.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Review and Download</a></li>
   </ul>
   </span>
-
       <div class="hide m-4 flex items-center justify-self-center lg:w-48">
         <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
         <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
@@ -56,49 +55,50 @@
 
       <div class="w-full" id="we">
         <div class="" id="LempJobDiv1">
-          <div class="mt-7 flex justify-center lg:hidden border-4 border-b-0 border-white py-5 rounded-t-xl" id="sEmpDiv1">
-            <input type="text" name="Employeer" id="sEmployeer" placeholder="Employeer" class="h-16 w-[500px] border-4 border-white rounded-xl  pl-2 md:w-[640px]" />
+          <div class="mt-7 flex justify-center lg:hidden transparent-yellow border-4 border-b-0 border-white py-5 rounded-t-xl" id="sEmpDiv1">
+            <input type="text" name="Employeer" id="sEmployeer1" placeholder="Employeer" class="h-16 w-[500px] border-4 border-white rounded-xl  pl-2 md:w-[640px]" />
             <!-- Small Screen -->
           </div>
-          <div class=" flex justify-center lg:hidden border-4 border-t-0 border-white py-5 rounded-b-xl" id="sJobDiv1">
-            <input type="text" name="Job Title" id="sJob Title" placeholder="Job Title" class="h-16 w-[500px] border-4 border-white rounded-xl pl-2 md:w-[640px]" />
+          <div class=" flex justify-center lg:hidden transparent-yellow border-4 border-t-0 border-white py-5 rounded-b-xl" id="sJobDiv1">
+            <input type="text" name="Job Title" id="sJob_Title1" placeholder="Job Title" class="h-16 w-[500px] border-4 border-white rounded-xl pl-2 md:w-[640px]" />
             <!-- Small Screen -->
           </div>
 
           <div class="hide lg:mt-7 lg:flex lg:justify-evenly border-4 border-white transparent-yellow lg:py-5 rounded-xl" id="SempJobDiv1">
             <div id="lEmpDiv1">
-              <label for="Employeer" class="lg:text-xl lg:font-semibold">Employeer</label><br />
-              <input type="text" name="Employeer" id="lEmployeer" placeholder="Employeer" class="h-16 w-[500px] border-4 border-white pl-2 lg:mt-3 lg:h-16 lg:text-xl rounded-xl" />
+              <label id="lempLabel1" for="Employeer" class="lg:text-xl lg:font-semibold">Employeer</label><br />
+              <input type="text" name="Employeer" id="lEmployeer1" placeholder="Employeer" class="h-16 w-[500px] border-4 border-white pl-2 lg:mt-3 lg:h-16 lg:text-xl rounded-xl" />
               <!-- Large Screen -->
             </div>
             <div id="lJobDiv1">
-              <label for="Job Title" class="lg:text-xl lg:font-semibold">Job Title</label><br />
-              <input type="text" name="Job Title" id="lJob Title" placeholder="Job Title" class="h-16 w-[500px] border-4 border-white rounded-xl pl-2 lg:mt-3 lg:h-16 lg:text-xl" />
+              <label id="ljobdivlabel1" for="Job Title" class="lg:text-xl lg:font-semibold">Job Title</label><br />
+              <input type="text" name="Job Title" id="lJob_Title1" placeholder="Job Title" class="h-16 w-[500px] border-4 border-white rounded-xl pl-2 lg:mt-3 lg:h-16 lg:text-xl" />
               <!-- Large Screen -->
             </div>
           </div>
 
-          <div class="mt-8 flex justify-evenly mb-6 border-4 border-white transparent-pink pt-4 rounded-2xl" id="StartEndDiv1">
+          <div class="mt-8 flex justify-evenly mb-6 border-4 border-white transparent-pink py-4 rounded-2xl" id="StartEndDiv1">
             <div id="StartDiv1"><label for="Start Date" class="hide lg:text-xl lg:font-semibold">Start Date</label><br /><input type="text" name="Start Date" id="StartDate1" placeholder="Start Date" class="h-16 w-[227px] border-4 border-white rounded-xl pl-2 md:w-[310px] lg:mt-3 lg:h-16 lg:w-[500px] lg:text-xl" /></div>
 
             <div class="flex flex-col" id="EndAllDiv1">
-              <div id="EndDiv1"><label for="End Date" class="hide lg:text-xl lg:font-semibold">End Date</label><br /><input type="text" name="End Date" id="End Date" placeholder="End Date" class="h-16 w-[227px] border-4 border-white rounded-xl pl-2 md:w-[310px] lg:mt-3 lg:h-16 lg:w-[500px] lg:text-xl" /></div>
+              <div id="EndDiv1"><label for="End Date" class="hide lg:text-xl lg:font-semibold">End Date</label><br /><input type="text" name="End Date" id="EndDate1" placeholder="End Date" class="h-16 w-[227px] border-4 border-white rounded-xl pl-2 md:w-[310px] lg:mt-3 lg:h-16 lg:w-[500px] lg:text-xl" /></div>
               <span id="EndSpan1" class="my-4 flex w-[170px] justify-between md:w-[220px] lg:w-[230px]"><input type="checkbox" name="Current" id="Current" class="md:w-5 md:border-4 md:border-white rounded-xl" /><label for="Current" class="md:text-xl md:font-semibold lg:text-xl">I currently work here</label></span>
             </div>
           </div>
         </div>
 
         <div class="mt-3 flex" id="AddBtn">
-          <button class="w-7 border-4 border-white rounded-xl" onclick="addNewWEField()" id="addBtn1"></button>
+          <button class="w-7 rounded-xl" onclick="addNewWEField()" id="addBtn1"><img src="add.png" alt="add image"></button>
           <p class="ml-5 text-lg font-semibold lg:text-xl">Add more job Experience</p>
         </div>
       </div>
     </main>
       <div class="mt-5 flex justify-between border-t-4 border-white transparent-orange rounded-xl" id="btnsec">
-        <button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="backbtn">&larr; Back</button>
-        <button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="nextbtn">Next &rarr;</button>
+        <a href="page1.html"><button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="backbtn" type="button" target="_blank">&larr; Back</button></a>
+        <a href="page3.html"><button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="nextbtn" type="button" target="_blank">Next &rarr;</button></a>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <script src="script0.js"></script>
 </html>

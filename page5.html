@@ -10,45 +10,55 @@
   <title>Skills</title>
 </head>
 
-<body>
-  <nav class="flex h-14 w-full items-center justify-between bg-yellow-300 md:w-full xl:h-14">
-    <div class="mx-auto xl:hidden">&larr;</div>
-    <div class="text-xl font-bold xl:hidden">Summary</div>
-    <div class="mx-auto xl:hidden">&rarr;</div>
-    <div class="m-4 flex justify-evenly xl:w-48">
-      <img src="/" alt="w-name" class="hide h-9 w-16" />
-      <p class="hide font-bold">website name</p>
-    </div>
-    <div class="hide xl:w-[800px]">
-      <ul class="flex justify-evenly">
-        <li class="hover: cursor-pointer font-bold">Heading</li>
-        <li class="cursor-pointer font-bold">Work History</li>
-        <li class="cursor-pointer font-bold">Education</li>
-        <li class="cursor-pointer font-bold xl:text-xl">Skill</li>
-        <li class="cursor-pointer font-bold">Summary</li>
-        <li class="cursor-pointer font-bold">Review and Download</li>
-      </ul>
-    </div>
-  </nav>
-  <main class="mx-auto max-w-[590px] md:max-w-[680px] xl:max-w-[1400px]">
+<body><div class="grad ">
+  <nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0 shadow-xl">
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a href="page4.html">&larr;</a></div>
+      <div class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden" onclick="open()">Summary</div>
+      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a href="page6.html">&rarr;</a></div>
+<span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 h-60 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl shadow-2xl ">
+  <ul class="flex-col items-center px-4">
+    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="page1.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Heading</a></</li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3" ><a href="page2.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Work History</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="page3.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Education</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="page4.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Skill</a></li>
+    <li class="lg:text-xl font-bold flex justify-center mt-3 text-2xl "><a href="page5.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Summary</a></ary</li>
+    <li class="lg:text-xl font-bold flex justify-center my-3 "><a href="page6.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Review and Download</a></li>
+  </ul>
+  </span>
 
+      <div class="hide m-4 flex items-center justify-self-center lg:w-48">
+        <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
+        <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
+      </div>
+      <div class="hide lg:w-[800px]">
+        <ul class="flex items-center justify-evenly">
+          <li id="heading" class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-32"><a href="page1.html">Heading</a></li>
+          <li class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-48"><a href="page2.html">Work History</a></li>
+          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36"><a href="page3.html">Education</a></li>
+          <li class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-20"><a href="page4.html">Skill</a></li>
+          <li class="flex h-9 w-32 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-rose-400 hover:text-2xl hover:w-36"><a href="page5.html">Summary</a></li>
+          <li class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-72"><a href="page6.html">Review and Download</a></li>
+        </ul>
+      </div>
+    </nav>
+  <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px] pt-20">
     <div class="mt-4 flex w-full">
-      <div id="SmallScreen_1" class=" w-[600px]">
-        <div class="w-full bg-orange-300">
-          <div class="flex h-12 w-full items-center border-2 border-black">
-            <button class="ml-2 h-7 w-7 border border-black"></button>
+      <div id="SmallScreen_1" class="w-full max-w-[600px] hide">
+        <div class="w-full">
+          <div class="flex h-12 w-full items-center border-white">
+            <button class="ml-2 h-7 w-7 border border-white"></button>
             <input type="text" name="Search" id="Search" placeholder="Type here to search"
-              class="ml-3 h-full w-full border-0 text-lg font-bold text-gray-900 pl-3" />
+              class="ml-3 h-full w-full border-0 text-lg font-bold text-gray-900 pl-3 rounded-lg" />
           </div>
-          <div class="xl:h-[600px] h-[500px] overflow-y-scroll">
-            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+          <div class="lg:h-[600px] h-[500px] overflow-y-scroll my-3">
+            <div class="mx-auto my-2 flex w-full max-w-[520px] shadow-2xl rounded-lg">
               <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add1()"></button>
               <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Hardworking and passionate job seeker with strong
               organizational skills eager to secure entry-levelJob Title position. Ready to help team achieve company goals.">Hardworking and passionate job seeker with strong
                 organizational skills eager to secure entry-level <span class="text-blue-500">Job Title</span> position.
                 Ready to help team achieve company goals.</div>
             </div>
-            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+            <div class="mx-auto my-2 flex w-full max-w-[520px] shadow-2xl rounded-lg">
               <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add2()"></button>
               <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Enthusiastic eager to contribute to team success through hard work, attention to detail and excellent
               organizational skills. Clear understanding of Task and
@@ -58,7 +68,7 @@
                 training in <span class="text-blue-500">Skill</span>. Motivated to learn, grow and excel in <span
                   class="text-blue-500">Industry</span>.</div>
             </div>
-            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+            <div class="mx-auto my-2 flex w-full max-w-[520px] shadow-2xl rounded-lg">
               <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add3()"></button>
               <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Dedicated professional with history of meeting company goals utilizing
             consistent and organized practices. Skilled in working under pressure and adapting to new situations and
@@ -67,7 +77,7 @@
                 consistent and organized practices. Skilled in working under pressure and adapting to new situations and
                 challenges to best enhance the organizational brand.</div>
             </div>
-            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+            <div class="mx-auto my-2 flex w-full max-w-[520px] shadow-2xl rounded-lg">
               <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add4()"></button>
               <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="To seek and maintain full-time position that
               offers professional challenges utilizing interpersonal skills, excellent time management and
@@ -75,7 +85,7 @@
                 offers professional challenges utilizing interpersonal skills, excellent time management and
                 problem-solving skills.</div>
             </div>
-            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+            <div class="mx-auto my-2 flex w-full max-w-[520px] shadow-2xl rounded-lg">
               <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add5()"></button>
               <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Experienced with over  years of experience in. Excellent reputation for resolving problems and improving
               customer satisfaction.">Experienced <span class="text-blue-500">Job
@@ -83,7 +93,7 @@
                   class="text-blue-500">Industry</span>. Excellent reputation for resolving problems and improving
                 customer satisfaction.</div>
             </div>
-            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+            <div class="mx-auto my-2 flex w-full max-w-[520px] shadow-2xl rounded-lg">
               <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add6()"></button>
               <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Organized and dependable candidate successful at
               managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to
@@ -91,7 +101,7 @@
                 managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to
                 meet team goals.</div>
             </div>
-            <div class="mx-auto my-2 flex w-[520px] bg-orange-400">
+            <div class="mx-auto my-2 flex w-full max-w-[520px] shadow-2xl rounded-lg">
               <button class="my-auto ml-2 h-[25px] w-[60px] bg-green-500" onclick="add7()"></button>
               <div class="my-2 w-[1100px] px-5 text-lg font-semibold" id="Reliable employee seeking position. Offering excellent communication and good judgment">Reliable employee seeking <span
                   class="text-blue-500">Job Title</span> position. Offering excellent communication and good judgment.
@@ -99,45 +109,43 @@
             </div>
           </div>
         </div>
-        <div class="mt-10 flex justify-center bg-red-500 xl:hidden" onclick="OpenScreen2()">
-          <button class="my-2 text-3xl font-bold">Next</button>
+        <div class="mt-10 flex justify-center items-center lg:hidden" onclick="OpenScreen2()">
+          <button class="w-48 h-14 my-2 border-4 border-white rounded-xl text-3xl font-bold hover:bg-white hover:text-pink-500">Next</button>
         </div>
       </div>
-      <div id="SmallScreen_2" class="flex w-[650px] flex-col bg-yellow-300 hide ml-11">
+      <div id="SmallScreen_2" class="flex w-full max-w-[650px] flex-col ml-11">
         <div class="mb-8 flex items-center justify-between" id="TopicName">
           <div class="ml-5">
-            <p class="text-3xl font-bold xl:text-4xl">Strength</p>
-            <p class="mt-4 text-xl font-semibold xl:text-xl">Add your every strength here</p>
+            <p class="text-3xl font-bold lg:text-4xl">Strength</p>
+            <p class="mt-4 text-xl font-semibold lg:text-xl">Add your every strength here</p>
           </div>
-          <button class="mr-4 h-10 w-12 border border-black md:hidden">p</button>
-          <button class="hide2 mr-4 h-10 border border-black text-lg font-semibold md:w-28 xl:hidden">preview</button>
-          <button
-            class="hide mr-4 h-10 border border-black text-lg font-semibold md:w-28 xl:h-12 xl:w-36 xl:text-2xl xl:font-bold">preview</button>
-        </div>
-        <div class="mx-auto flex h-[450px] w-[520px] flex-col border border-black">
-          <textarea name="" id="BlankSpaceForStrength" class="mx-auto mt-2 h-[380px] w-[470px] border-0" style="resize: none;"></textarea>
-          <div class="my-auto flex justify-evenly">
-            <button class="h-10 w-10 border-2 border-black" id="bold" onclick="bold()"></button>
-            <button class="h-10 w-10 border-2 border-black" id="italic" onclick="italic()"></button>
-            <button class="h-10 w-10 border-2 border-black" id="underline" onclick="underline()"></button>
-            <button class="h-10 w-10 border-2 border-black" id="numbers" onclick="numbers()"></button>
-            <button class="h-10 w-10 border-2 border-black" id="undo" onclick="undo()"></button>
-            <button class="h-10 w-10 border-2 border-black" id="redo" onclick="redo()"></button>
+        <button class="mr-4 h-11 w-12 rounded-xl border-4 border-white font-bold hover:bg-white hover:text-pink-300 md:hidden">p</button>
+        <button class="hide2 mr-4 h-10 rounded-xl border-4 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden">preview</button>
+        <button class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold">preview</button>
+      </div>
+        <div class="mx-auto flex w-full max-w-[520px] flex-col border-white">
+          <textarea name="" id="BlankSpaceForStrength" class="mx-auto mt-2 h-[380px] w-full max-w-[500px] border-0" style="resize: none;"></textarea>
+          <div class="my-8 flex justify-evenly">
+            <button class="h-10 w-10 shadow-2xl border-2 border-white" id="bold" onclick="bold()"></button>
+            <button class="h-10 w-10 shadow-2xl border-2 border-white" id="italic" onclick="italic()"></button>
+            <button class="h-10 w-10 shadow-2xl border-2 border-white" id="underline" onclick="underline()"></button>
+            <button class="h-10 w-10 shadow-2xl border-2 border-white" id="numbers" onclick="numbers()"></button>
+            <button class="h-10 w-10 shadow-2xl border-2 border-white" id="undo" onclick="undo()"></button>
+            <button class="h-10 w-10 shadow-2xl border-2 border-white" id="redo" onclick="redo()"></button>
           </div>
         </div>
-        <div class="mt-6 flex h-14 w-[550px] xl:hidden mx-auto">
-          <button class=" mx-auto w-[520px] border-4 border-black text-xl font-bold" onclick="OpenScreen1()">Pre Written
+        <div class="mt-6 flex lg:hidden mx-auto">
+          <button class=" mx-auto w-80 h-14 max-w-[520px] border-4 border-white rounded-xl text-xl font-bold hover:bg-white hover:text-pink-400" onclick="OpenScreen1()">Pre Written
             Contents</button>
-        </div>
-        <div class="mt-5 flex justify-between" id="btnsec">
-          <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="backbtn">&larr;
-            Back</button>
-          <button class="hide border-2 border-black xl:h-14 xl:w-36 xl:text-2xl xl:font-bold" id="nextbtn">Next
-            &rarr;</button>
         </div>
       </div>
     </div>
   </main>
+        <div class="mt-5 flex justify-between border-t-4 border-white transparent-orange rounded-xl" id="btnsec">
+        <a href="page4.html"><button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="backbtn" type="button" target="_blank">&larr; Back</button></a>
+        <a href="page6.html"><button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="nextbtn" type="button" target="_blank">Next &rarr;</button></a>
+      </div>
+      </div>
 </body>
 <script src="script.js"></script>
 

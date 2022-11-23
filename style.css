@@ -1,8 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @media(max-width:1023px) {
-    .hide {
+  .hide {
         display: none;
     }
 }
@@ -106,13 +103,13 @@ color: #f9e006;
   background-color: #d2f48b;
 }
 .grad{
-  background: linear-gradient(112deg, #fbf79d, #ffb369, #FCB8C7, #d2f48b) 50% 0 fixed;
+  background: linear-gradient(112deg, #fbf79d, #ffb369, #FCB8C7, #bfed5a) 100% 0 fixed;
 }
 .grad-green{
   background: linear-gradient(112deg, #d2f48b, #c6f068, #648b0e) 50% 0 fixed;
 }
 .text-grad{
-  color: linear-gradient(112deg, #fbf79d, #ffb369, #FCB8C7, #d2f48b) 50% 0 fixed;
+  color: linear-gradient(112deg, #fbf79d, #ffb369, #FCB8C7, #648b0e) 50% 0 fixed;
 }
 .transparent-yellow{
   background-color: rgba(251, 237, 111, 0.5);
@@ -126,3 +123,6 @@ color: #f9e006;
 .transparent-orange{
   background-color: rgba(255, 167, 51, 0.5);
 }
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
