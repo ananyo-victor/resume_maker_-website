@@ -13,3 +13,4 @@ function open1(){
 const miniwindowOB = document.getElementById('miniWindow');
 miniwindowOB.classList.toggle('hidden');
 }
+

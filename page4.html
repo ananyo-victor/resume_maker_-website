@@ -17,7 +17,7 @@
 
   <button id="cancelPreview" class="h-[840px] w-[1519px] absolute z-10 hidden" onclick="preview1()"></button>
 
-  <div id="oneandall" class="grad w-screen h-screen">
+  <div id="oneandall" class="grad w-full h-screen ">
     <nav
       class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0 shadow-xl">
       <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a
@@ -36,44 +36,44 @@
               class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Work History</a></li>
           <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="page3.html"
               class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Education</a></li>
-          <li class="lg:text-xl font-bold flex justify-center mt-3 text-2xl "><a href="page4.html"
+          <li class="lg:text-xl font-bold flex justify-center mt-3 text-xl "><a href="page4.html"
               class="hover:bg-white hover:px-5 hover:py-2 rounded-xl" onclick="open1()">Skill</a></li>
           <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="page5.html"
               class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Summary</a></li>
-          <li class="lg:text-xl font-bold flex justify-center my-3 "><a href="page6.html"
+          <li class="lg:text-xl font-bold flex justify-center my-3 "><a href="page7.html"
               class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Review and Download</a></li>
         </ul>
       </span>
 
-      <div class="hide m-4 flex items-center justify-self-center lg:w-48">
+      <div class="hidden m-4 lg:flex items-center justify-self-center lg:w-48">
         <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
         <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
       </div>
       <div class="hide lg:w-[800px]">
         <ul class="flex items-center justify-evenly">
           <li id="heading"
-            class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-32">
+            class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-xl hover:w-32">
             <a href="page1.html">Heading</a>
           </li>
           <li
-            class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-48">
+            class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-xl hover:w-48">
             <a href="page2.html">Work History</a>
           </li>
           <li
-            class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36">
+            class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-xl hover:w-36">
             <a href="page3.html">Education</a>
           </li>
           <li
-            class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-rose-400 hover:text-2xl hover:w-20">
+            class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-xl hover:text-rose-400 hover:text-xl hover:w-20">
             <a href="page4.html">Skill</a>
           </li>
           <li
-            class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36">
+            class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-xl hover:w-36">
             <a href="page5.html">Summary</a>
           </li>
           <li
-            class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-72">
-            <a href="page6.html">Review and Download</a>
+            class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-xl hover:w-72">
+            <a href="page7.html">Review and Download</a>
           </li>
         </ul>
       </div>
@@ -91,87 +91,75 @@
           class="hide2 mr-4 h-10 rounded-xl border-4 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden"
           onclick="preview1()">preview</button>
         <button
-          class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold"
+          class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-xl lg:font-bold"
           onclick="preview1()">preview</button>
       </div>
-      <div class="flex w-full flex-col justify-evenly">
+
+      <div id="we" class="flex w-full flex-col justify-evenly">
         <div id="sdiv1"
           class="flex justify-between mt-5 pb-5 lg:hidden transparent-yellow rounded-xl border-2 border-white">
-          <div class="pl-9 md:pl-5 flex flex-col items-center">
-            <div class="mt-4">
-              <label for="Skill1" class="text-2xl font-semibold">Skill</label><br />
-              <select name="cars" id="cars"
+          <div class="pl-9 md:pl-5 flex flex-col items-center" id="sdiv1_1">
+            <div class="mt-4" id="sdiv1_1_1">
+              <label for="Skill1" class="text-xl font-semibold" id="sskilllabel1">Skill</label><br />
+              <input id="sskillinput1" type="text" name="level"
                 class="h-14 w-[450px] border border-white rounded-xl pl-2 text-gray-400 md:w-[580px] mt-3">
-                <option value="Options" class="text-black">Options</option>
-                <option value="Class 10"></option>
-                <option value="Class 12"></option>
-              </select>
             </div>
-            <div class="mt-4"><label for="Level1" class="text-2xl font-semibold">Level</level><br /><input type="text"
-                  name="Level1" id="Level1"
-                  class="h-14 w-[450px] border border-white rounded-xl pl-2 md:w-[580px]  mt-3" /></div>
+            <div id="sdiv1-1-2" class="mt-4">
+              <label id="slevellabel1" for="Level1" class="text-xl font-semibold">Level</level><br />
+                <select name="Level1" id="sselectlevel1"
+                  class="h-14 w-[450px] border border-white rounded-xl pl-2 md:w-[580px]  mt-3">
+                  <option id="soption1_1" value="default" class="text-base">Options</option>
+                  <option id="soption1_2" value="high" class="text-base">Expert</option>
+                  <option id="soption1_3" value="medium" class="text-base">Intermidiate</option>
+                  <option id="soption1_4" value="low" class="text-base">Beginner</option>
+                </select>
+            </div>
           </div>
-          <div class="w-20 flex justify-center items-center">
-            <button class="h-5 w-5" onclick="close2()"><img src="delete.png" alt="" srcset=""></button>
+          <div id="sdiv1_2" class="w-20 flex justify-center items-center">
+            <button id="sbutton1" class="h-5 w-5" onclick="close2()"><img src="delete.png" alt="" srcset=""></button>
           </div>
         </div>
         <!-- Small Screen -->
-        <!-- <div class="flex flex-col items-center mt-5 pb-5 lg:hidden transparent-pink rounded-xl border-2 border-white">
-        <div class="mt-4"><label for="Skill2" class="text-2xl font-semibold">Skill</label><br />
-          <select name="skill" id="SSelect1"
-            class="h-14 w-[450px] border border-white rounded-xl pl-2 text-gray-400 md:w-[580px] mt-3">
-            <option value="Degree"></option>
-            <option value="Class 10"></option>
-            <option value="Class 12"></option>
-          </select>
-        </div>
-        <div class="mt-4" id="LDiv2"><label for="Level2" class="text-2xl font-semibold">Level</level><br /><input
-              type="text" name="Level1" id="Level1"
-              class="h-14 w-[450px] border border-white rounded-xl pl-2 md:w-[580px]  mt-3" /></div>
-      </div> -->
-        <!-- Small Screen -->
+
         <div id="ldiv1"
           class="lg:flex justify-evenly mt-5 pb-5 hide transparent-yellow rounded-xl border-4 border-white">
-          <div class="mt-4"><label for="Skill1" class="text-2xl font-semibold">Skill</label><br />
-            <select name="cars" id="cars"
-              class="h-16 w-[450px] border border-white rounded-xl pl-2 lg:mt-4 lg:h-16 lg:text-2xl">
-              <option value="Degree">Options</option>
-              <option value="Class 10"></option>
-              <option value="Class 12"></option>
-            </select>
+          <div id="ldiv1_1" class="mt-4">
+            <label id="lskilllabel1" for="Skill1" class="text-xl font-semibold">Skill</label><br />
+            <input type="text" id="lskillinput1"
+              class="h-16 w-[450px] border border-white rounded-xl pl-2 lg:mt-4 lg:h-16 lg:text-xl">
+            </input>
           </div>
-          <div class="mt-4"><label for="Level1" class="text-2xl font-semibold">Level</level><br /><input type="text"
-                name="Level1" id="Level1"
-                class="h-16 w-[450px] border border-white rounded-xl pl-2 lg:mt-4 lg:h-16 lg:text-2xl" </div>
+          <div id="ldiv1_2" class="mt-4">
+            <label id="llevellabel1" for="Level1" class="text-xl font-semibold">Level</level><br />
+              <select name="" id="lselectlevel1"
+                class="h-16 w-[450px] border border-white rounded-xl pl-2 lg:mt-4 lg:h-16 lg:text-xl">
+                <option id="loption1_1" value="default" class="text-base">Options</option>
+                <option id="loption1_2" value="high" class="text-base">Expert</option>
+                <option id="loption1_3" value="medium" class="text-base">Intermidiate</option>
+                <option id="loption1_4" value="low" class="text-base">Beginner</option>
+              </select>
+          </div>
+          <div id="ldiv1_3" class="mt-7 pt-7 w-20 flex justify-center items-center">
+            <button id="lbutton1" class="h-8 w-8" onclick="close2()"><img src="delete.png" alt="" srcset=""></button>
           </div>
         </div>
         <!-- Large Screen -->
-        <!-- <div class="lg:flex justify-evenly mt-6 pb-5 hide transparent-pink rounded-xl border-4 border-white">
-        <div class="mt-4"><label for="Skill1" class="text-2xl font-semibold">Skill</label><br />
-          <select name="cars" id="cars"
-            class="h-16 w-[450px] border border-white rounded-xl pl-2 lg:mt-4 lg:h-16 lg:text-2xl">
-            <option value="Degree">Options</option>
-            <option value="Class 10"></option>
-            <option value="Class 12"></option>
-          </select>
+
+        <div id="AddBtn" class="mt-9 mb-5 flex">
+          <button class="w-7 rounded-xl" onclick="addNewField()"><img src="add.png" alt="add image"></button>
+          <p class="ml-5 text-lg font-semibold lg:text-xl">Add another skill</p>
         </div>
-        <div class="mt-4"><label for="Level1" class="text-2xl font-semibold">Level</level><br /><input type="text"
-              name="Level1" id="Level1"
-              class="h-16 w-[450px] border border-white rounded-xl pl-2 lg:mt-4 lg:h-16 lg:text-2xl" </div>
-        </div>
-      </div> -->
-        <!-- Large Screen -->
-        <div class="mt-9 flex">
-          <button class="w-7 border-4 border-white rounded-xl"></button>
-          <p class="ml-5 text-lg font-semibold lg:text-2xl" onclick="addNewField()">Add another qualification</p>
-        </div>
+      </div>
+      <div class="h-24 mt-5"></div>
     </main>
-    <div class="absolute bottom-0 w-full mt-5 flex justify-between border-t-4 border-white transparent-orange rounded-xl" id="btnsec">
+    <div
+      class="fixed bottom-0 hidden w-full mt-5 lg:flex justify-between border-t-4 border-white transparent-orange rounded-xl"
+      id="btnsec">
       <a href="page3.html"><button
-          class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400"
+          class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400"
           id="backbtn" type="button" target="_blank">&larr; Back</button></a>
       <a href="page5.html"><button
-          class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400"
+          class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400"
           id="nextbtn" type="button" target="_blank">Next &rarr;</button></a>
     </div>
   </div>

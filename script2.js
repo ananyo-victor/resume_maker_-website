@@ -420,7 +420,7 @@ function addNewWEField() {
     clspanOB.classList.add("hidden");
     // console.log(closespan());
 }
-function open(){
-    const miniwindowOB = document.getElementById('miniWindow');
-    miniwindowOB.classList.remove('hidden');
-    }
+// function open(){
+//     const miniwindowOB = document.getElementById('miniWindow');
+//     miniwindowOB.classList.remove('hidden');
+//     }
