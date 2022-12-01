@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<script>
+const btn1 = document.getElementById('btn');
+
+btn1.addEventListener('click', function handleClick() {
+  
+    // 👇️ log text selection
+
+  console.log(window.getSelection().toString());
+
+  // ✅ Clear text selection
+  
+  window.getSelection().removeAllRanges();
+});
+</script>
+<body>
+
+    <div id="box" style="margin-top: 100px">
+      Select some of this text and click on the button.
+    </div>
+
+    <button id="btn">Remove and console.log selection</button>
+
+</body>
+</html>

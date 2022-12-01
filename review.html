@@ -2,29 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <iframe src="page1.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"
-            width="1120.98px" height="792.1px">
-        </iframe>
+    <div id="oneandall" class="grad h-full w-full">
+        <nav
+            class="yellow-lite yellow-border fixed top-0 flex h-16 w-full items-center justify-between rounded-xl border-4 shadow-xl md:w-full lg:h-16">
+            <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a
+                    href="skill.html">&larr;</a></div>
+            <div class="mx-auto flex h-10 w-56 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden"
+                onclick="open1()">Reveiw and Download</div>
+            <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a
+                    href="achievement.html">&rarr;</a></div>
+            <span id="miniWindow"
+                class="yellow-lite yellow-border absolute top-0 left-[50%] mx-auto hidden h-60 w-60 translate-x-[-50%] rounded-xl bg-white shadow-2xl lg:hidden">
+                <ul class="flex-col items-center px-4">
+                    <li class="mt-3 flex justify-center font-bold lg:text-xl"><a href="heading.html"
+                            class="rounded-xl hover:bg-white hover:px-5 hover:py-2">Heading</a></li>
+                    <li class="mt-3 flex justify-center font-bold lg:text-xl"><a href="workExperience.html"
+                            class="rounded-xl hover:bg-white hover:px-5 hover:py-2">Work History</a></li>
+                    <li class="mt-3 flex justify-center font-bold lg:text-xl"><a href="education.html"
+                            class="rounded-xl hover:bg-white hover:px-5 hover:py-2">Education</a></li>
+                    <li class="mt-3 flex justify-center font-bold lg:text-xl"><a href="skill.html"
+                            class="rounded-xl hover:bg-white hover:px-5 hover:py-2">Skill</a></li>
+                    <li class="mt-3 flex justify-center font-bold lg:text-xl"><a href="summary.html"
+                            class="rounded-xl hover:bg-white hover:px-5 hover:py-2" onclick="open1()">Summary</a></li>
+                    <li class="my-3 flex justify-center text-2xl font-bold lg:text-xl"><a href="review.html"
+                            class="rounded-xl hover:bg-white hover:px-5 hover:py-2">Review and Download</a></li>
+                </ul>
+            </span>
+
+            <div class="m-4 hidden items-center justify-self-center lg:flex lg:w-48">
+                <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
+                <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website
+                    name</p>
+            </div>
+            <div class="hide lg:w-[800px]">
+                <ul class="flex items-center justify-evenly">
+                    <li id="heading"
+                        class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:w-32 hover:bg-white hover:text-2xl hover:text-rose-400">
+                        <a href="heading.html">Heading</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:w-48 hover:bg-white hover:text-2xl hover:text-rose-400">
+                        <a href="workExperience.html">Work History</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:w-36 hover:bg-white hover:text-2xl hover:text-rose-400">
+                        <a href="education.html">Education</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:w-20 hover:bg-white hover:text-2xl hover:text-rose-400">
+                        <a href="skill.html">Skill</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-32 cursor-pointer items-center justify-center rounded-xl font-bold hover:w-36 hover:bg-white hover:text-2xl hover:text-rose-400">
+                        <a href="summary.html">Summary</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-72 cursor-pointer items-center justify-center rounded-xl font-bold hover:w-72 hover:bg-white hover:text-2xl hover:text-rose-400 lg:text-2xl">
+                        <a href="review.html">Review and Download</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="mx-auto max-w-[590px] pt-20 md:max-w-[680px] lg:max-w-[1200px]">
+            <div id="" class="flex w-full items-center justify-center">
+                <div class="h-[35em] w-[30em] bg-white overflow-y-hidden">
+                    <iframe id="Tem" class="h-[35em] w-[31em] overflow-x-hidden" src="Temp1.html" frameborder="0"></iframe>
+                </div>
+                <div id="temppage"
+                    class="absolute hidden bottom-20 z-10 flex h-[18em] w-full items-center justify-evenly bg-black pt-4 ">
+                    <div id="" class="bg-red-500 py-2 px-2 h-full lg:w-[13em]"><iframe class="h-full bg-white" id=""
+                            src="" frameborder="0"></iframe></div>
+                    <div id="" class="bg-red-500 py-2 px-2 h-full lg:w-[13em]"><iframe class="h-full bg-white" id=""
+                            src="" frameborder="0"></iframe></div>
+                    <div id="" class="bg-red-500 py-2 px-2 h-full lg:w-[13em]"><iframe class="h-full bg-white" id=""
+                            src="" frameborder="0"></iframe></div>
+                </div>
+            </div>
+        </main>
+        <div class="transparent-orange flex w-full justify-between rounded-xl border-t-4 border-white py-4" id="btnsec">
+            <button
+                class="lg:h-13 mx-10 rounded-xl border-4 border-white px-5 py-1 font-bold hover:bg-white hover:text-orange-400 lg:w-36 lg:text-xl"
+                id="backbtn" type="button" target="_blank" onclick="temppagefunction()">Template</button>
+            <button
+                class="lg:h-13 mx-10 rounded-xl border-4 border-white px-5 py-1 font-bold hover:bg-white hover:text-orange-400 lg:w-36 lg:text-xl"
+                id="nextbtn" type="button" target="_blank">Download</button>
+        </div>
     </div>
-
-    <br />
-
-    <div>
-        <a href="Temp1.html" target="targetframe">Link to Page 2</a><br />
-        <a href="temp2.html" target="targetframe">Link to Page 3</a>
-    </div>
-
-
-    <button onclick="jsredir()">Click Me!</button>
 </body>
-<script src="scripts/script7.js"></script>
+<script src="review.js"></script>
+<script src="iframeResizer.min.js"></script>
+<!-- <script src="script0.js"></script> -->
 
 </html>
