@@ -53,22 +53,28 @@
         <ul class="flex items-center justify-evenly">
           <li id="heading"
             class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-32">
-            <a href="heading.html">Heading</a></li>
+            <a href="heading.html">Heading</a>
+          </li>
           <li
             class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-48">
-            <a href="workExperience.html">Work History</a></li>
+            <a href="workExperience.html">Work History</a>
+          </li>
           <li
             class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36">
-            <a href="education.html">Education</a></li>
+            <a href="education.html">Education</a>
+          </li>
           <li
             class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-20">
-            <a href="skill.html">Skill</a></li>
+            <a href="skill.html">Skill</a>
+          </li>
           <li
             class="flex h-9 w-32 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-rose-400 hover:text-2xl hover:w-36">
-            <a href="summary.html">Summary</a></li>
+            <a href="summary.html">Summary</a>
+          </li>
           <li
             class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-72">
-            <a href="review.html">Review and Download</a></li>
+            <a href="review.html">Review and Download</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -160,19 +166,22 @@
               <p class="mt-4 text-xl font-semibold lg:text-xl">Add your every strength here</p>
             </div>
             <button
-              class="mr-4 h-11 w-12 rounded-xl border-4 border-white font-bold hover:bg-white hover:text-pink-300 md:hidden">p</button>
+              class="mr-4 h-11 w-12 rounded-xl border-4 border-white font-bold hover:bg-white hover:text-pink-300 md:hidden" onclick="preview1()">p</button>
             <button
-              class="hide2 mr-4 h-10 rounded-xl border-4 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden">preview</button>
+              class="hide2 mr-4 h-10 rounded-xl border-4 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden" onclick="preview1()">preview</button>
             <button
-              class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold">preview</button>
+              class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" onclick="preview1()">preview</button>
           </div>
-          <div contenteditable="true" class="mx-auto flex w-full max-w-[520px] flex-col border-white">
-            <div name="" value="hi" id="BlankSpaceForStrength" class="mx-auto mt-2 h-[380px] w-full max-w-[500px] border-0 rounded-md p-3 bg-white"
-              style="resize: none;"></div>
+          <div class="mx-auto flex w-full max-w-[520px] flex-col border-white">
+            <div contenteditable="true" name="" value="hi" id="BlankSpaceForStrength"
+              class="mx-auto mt-2 h-[380px] w-full max-w-[500px] border-0 rounded-md p-3 bg-white"
+              onkeydown="saveMemento()"></div>
             <div class="my-8 flex justify-evenly">
               <button class="h-10 w-10 shadow-2xl border-2 border-white font-bold" id="bold" onclick="bold()">B</button>
-              <button class="h-10 w-10 shadow-2xl border-2 border-white italic" id="italic" onclick="italic()">I</button>
-              <button class="h-10 w-10 shadow-2xl border-2 border-white underline-offset-2" id="underline" onclick="underline()">U</button>
+              <button class="h-10 w-10 shadow-2xl border-2 border-white italic" id="italic"
+                onclick="italic()">I</button>
+              <button class="h-10 w-10 shadow-2xl border-2 border-white underline-offset-2" id="underline"
+                onclick="underline()">U</button>
               <button class="h-10 w-10 shadow-2xl border-2 border-white" id="numbers" onclick="numbers()"></button>
               <button class="h-10 w-10 shadow-2xl border-2 border-white" id="undo" onclick="undo()"></button>
               <button class="h-10 w-10 shadow-2xl border-2 border-white" id="redo" onclick="redo()"></button>

@@ -1,3 +1,15 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "background.fullscreen": {
+
+        "image": "",
+        "opacity": 0.91,
+        "size": "cover",
+        "interval": 0
+    },
+    "background.customImages":[
+        "https://anime-pictures.net/pictures/get_image/711400-1864x1209-hyouka-kyoto+animation-chitanda+eru-mery+%28yangmalgage%29-single-long+hair.png",
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fweheartit.com%2Freishantti%2Fcollections%2F181163838-hyouka&psig=AOvVaw2qoukgwhXSHA4aTLBdq-jA&ust=1670059564889000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLCl3_TO2vsCFQAAAAAdAAAAABAI"
+    ],
+    "background.loop": true
 }

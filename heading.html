@@ -27,9 +27,9 @@ It will show to create new cv or continue with the old one -->
         class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden"
         onclick="open1()">Heading</div>
       <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a
-          href="workExperience.html">&rarr;</a></div>
+          href="workExperience.html">&rar r;</a></div>
       <span id="miniWindow"
-        class="mx-auto absolute bg-white w-60 top-0 h-60 left-[50%] translate-x-[-50%] yellow-lite yellow-border lg:hidden rounded-xl shadow-2xl hidden">
+        class="mx-auto absolute w-60 top-0 h-60 left-[50%] translate-x-[-50%] border-2 yellow-lite yellow-border lg:hidden rounded-xl shadow-2xl hidden">
         <ul class="flex-col items-center px-4">
           <li class="lg:text-xl font-bold flex justify-center mt-3 text-2xl"><a href="heading.html"
               class="hover:bg-white hover:px-5 hover:py-2 rounded-xl" onclick="open1()">Heading</a></li>
@@ -45,9 +45,9 @@ It will show to create new cv or continue with the old one -->
               class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Review and Download</a></li>
         </ul>
       </span>
-      <div class="hide m-4 flex items-center justify-self-center lg:w-48">
+      <div class="hidden m-4 lg:flex items-center justify-self-center lg:w-48">
         <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
-        <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
+        <p class="ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
       </div>
       <div class="hide lg:w-[800px]">
         <ul class="flex items-center justify-between">
@@ -101,59 +101,59 @@ It will show to create new cv or continue with the old one -->
             <!-- Upper Portion -->
             <div class="w-full lg:max-w-[300px] md:max-w-[620px] max-w-[520px] mx-auto">
               <label for="First Name" class="hide lg:text-xl lg:font-semibold">First Name</label><br />
-              <input type="text" name="First Name" id="" placeholder="First Name"
-                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full max-w-[600px] lg:max-w-[300px]" />
+              <input type="text" name="First Name" id="FName" placeholder="First Name"
+                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full max-w-[600px] lg:max-w-[300px]" onkeyup="generateResume()" />
             </div>
             <div class="w-full lg:max-w-[300px] hide mx-auto">
               <label for="Middle Name(optional)" class="lg:text-xl lg:font-semibold">Middle Name
                 (optional)</label><br />
-              <input type="text" name="Middle Name(optional)" id="" placeholder="Middle Name(Optional)"
-                class="pl-3 mt-3 border border-white rounded-xl lg:h-16 w-full lg:max-w-[300px]" />
+              <input type="text" name="Middle Name(optional)" id="MName" placeholder="Middle Name(Optional)"
+                class="pl-3 mt-3 border border-white rounded-xl lg:h-16 w-full lg:max-w-[300px]" onkeyup="generateResume()"/>
             </div>
             <div class="w-full lg:max-w-[300px] md:max-w-[620px] max-w-[520px] mx-auto">
               <label for="Last Name" class="hide lg:text-xl lg:font-semibold">Last Name</label><br />
-              <input type="text" name="Last Name" id="" placeholder="Last Name"
-                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full max-w-[600px] lg:max-w-[300px]" />
+              <input type="text" name="Last Name" id="LName" placeholder="Last Name"
+                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full max-w-[600px] lg:max-w-[300px]" onkeyup="generateResume()" />
             </div>
           </div>
           <div class="my-5 lg:flex items-center">
             <div class="flex-col justify-between w-full lg:max-w-[460px]">
               <div class="w-full lg:max-w-[460px] md:max-w-[620px] max-w-[520px] pr-5">
                 <label for="Proffession" class="hide lg:text-xl lg:font-semibold ">Proffession</label><br />
-                <input type="text" name="Proffession" id="" placeholder="Proffession"
-                  class="pl-3 mt-3 border border-white rounded-xl h-16 w-full max-w-[600px] lg:max-w-[460px]" />
+                <input type="text" name="Proffession" id="Proffession" placeholder="Proffession"
+                  class="pl-3 mt-3 border border-white rounded-xl h-16 w-full max-w-[600px] lg:max-w-[460px]" onkeyup="generateResume()" />
               </div>
               <div
                 class="mt-5 flex items-center justify-between w-full md:max-w-[620px] max-w-[520px] lg:max-w-[460px] mx-auto">
                 <div class="w-full max-w-[240px] md:max-w-[280px] lg:max-w-[230px] mx-auto">
                   <label for="Country" class="hide lg:text-xl lg:font-semibold">Country</label><br />
-                  <input type="text" name="Country" id="" placeholder="Country"
-                    class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[225px]" />
+                  <input type="text" name="Country" id="Country" placeholder="Country"
+                    class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[225px]" onkeyup="generateResume()" />
                 </div>
                 <div class="w-full max-w-[240px] md:max-w-[280px] lg:max-w-[230px] mx-auto">
                   <label for="City" class="hide lg:text-xl lg:font-semibold">City</label><br />
-                  <input type="text" name="City" id="" placeholder="City"
-                    class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[225px]" />
+                  <input type="text" name="City" id="City" placeholder="City"
+                    class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[225px]" onkeyup="generateResume()" />
                 </div>
               </div>
             </div>
             <div class="w-full md:max-w-[620px] max-w-[520px] lg:max-w-[460px] mx-auto">
               <label for="Address" class="hide lg:text-xl lg:font-semibold">Address</label><br />
-              <textarea name="Address" id="" placeholder="Address"
+              <textarea name="Address" id="Address" placeholder="Address"
                 class="pl-3 mt-3 border border-white rounded-xl h-48 w-full max-w-[600px] lg:max-w-[460px]"
-                style="resize:none;"></textarea>
+                style="resize:none;" onkeyup="generateResume()"></textarea>
             </div>
           </div>
           <div class="my-5 lg:flex items-center">
             <div class="w-full lg:max-w-[460px] md:max-w-[620px] max-w-[520px] mx-auto">
               <label for="Phone Number" class="lg:text-xl lg:font-semibold hide">Phone Number</label><br />
-              <input type="text" name="Phone Number" id="" placeholder="Phone Number"
-                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[460px]" />
+              <input type="number" name="Phone Number" id="PhoneNumber" placeholder="Phone Number"
+                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[460px]" onkeyup="generateResume()" />
             </div>
             <div class="w-full lg:max-w-[460px] md:max-w-[620px] max-w-[520px] mx-auto">
               <label for="Email" class="lg:text-xl lg:font-semibold hide">Email</label><br />
-              <input type="email" name="Email" id="" placeholder="Email"
-                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[460px]" />
+              <input type="email" name="Email" id="Email" placeholder="Email"
+                class="pl-3 mt-3 border border-white rounded-xl h-16 w-full lg:max-w-[460px]" onkeyup="generateResume()" />
             </div>
           </div>
         </div>
@@ -168,6 +168,6 @@ It will show to create new cv or continue with the old one -->
   </div>
 </body>
 <script src="iframeResizer.min.js"></script>
-<script src="script0.js"></script></script>
+<script type="text/javascript" src="script0.js"></script></script>
 <script src="heading.js"></script></script>
 </html>

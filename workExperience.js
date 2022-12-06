@@ -1,6 +1,8 @@
 // for page 2
-
 let i = 1;
+let j = 1;
+
+
 function addNewWEField() {
 
     const t = ++i;
@@ -61,10 +63,10 @@ function addNewWEField() {
     function enddate() {
         return "EndDate" + t;
     }
-    function semployeer(){
+    function semployeer() {
         return "sEmployeer" + t;
     }
-    function sjobtitle(){
+    function sjobtitle() {
         return "sJob_Title" + t;
     }
 
@@ -124,7 +126,7 @@ function addNewWEField() {
     sjobTitleDiv.classList.add("border-white");
     sjobTitleDiv.classList.add("py-5");
     sjobTitleDiv.classList.add("rounded-b-xl");
-    
+
     sjobTitleDiv.setAttribute("id", sjob());
 
     // adding new employeer for small screen
@@ -154,7 +156,7 @@ function addNewWEField() {
     semployeerDiv.classList.add('border-white');
     semployeerDiv.classList.add('py-5');
     semployeerDiv.classList.add('rounded-t-xl');
-    
+
     semployeerDiv.setAttribute("id", semp());
 
     // adding new job title label for large screen
@@ -418,9 +420,18 @@ function addNewWEField() {
 
     const clspanOB = document.getElementById(closespan());
     clspanOB.classList.add("hidden");
-    // console.log(closespan());
+}
+function present() {
+    const current = document.getElementById('Current');
+    if (current.checked) {
+        const EndInputOB1 = document.getElementById(enddate());
+        console.log(enddate());
+        EndInputOB1.value = 'Present';
+    }
 }
 // function open(){
 //     const miniwindowOB = document.getElementById('miniWindow');
 //     miniwindowOB.classList.remove('hidden');
 //     }
+
+iFrameResize({ log: true }, "#templateOpen")
