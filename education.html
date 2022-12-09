@@ -13,160 +13,200 @@
 
 <body>
     <div id="preview" class="absolute left-[50%] translate-x-[-50%] w-[900px] h-[1200px] bg-white z-20 top-9 hidden">
-        <div><iframe src="temp1.html" class="h-[1200px] w-full" frameborder="0"></iframe></div>
-      </div>
-    
-      <button id="cancelPreview" class="h-[840px] w-[1519px] absolute z-10 hidden" onclick="preview1()"></button>
-    
-      <div id="oneandall" class="grad w-full h-full">
-    <nav class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-2 yellow-border md:w-full lg:h-16 fixed top-0 shadow-xl">
-      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a href="workExperience.html">&larr;</a></div>
-      <div class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden" onclick="open1()">Education</div>
-      <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a href="skill.html">&rarr;</a></div>
-<span id="miniWindow" class="mx-auto absolute bg-white w-60 top-0 h-60 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl shadow-2xl hidden">
-  <ul class="flex-col items-center px-4">
-    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="heading.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Heading</a></li>
-    <li class="lg:text-xl font-bold flex justify-center mt-3" ><a href="workExperience.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Work History</a></li>
-    <li class="lg:text-xl font-bold flex justify-center mt-3 text-2xl "><a href="education.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl" onclick="open1()">Education</a></li>
-    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="skill.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Skill</a></li>
-    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="summary.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Summary</a></ary</li>
-    <li class="lg:text-xl font-bold flex justify-center my-3 "><a href="review.html" class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Review and Download</a></li>
-  </ul>
-  </span>
+        <div><iframe id="templateOpen1" src="temp1.html" class="h-[1200px] w-full" frameborder="0"></iframe></div>
+    </div>
 
-      <div class="hide m-4 flex items-center justify-self-center lg:w-48">
-        <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
-        <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website name</p>
-      </div>
-      <div class="hide lg:w-[800px]">
-        <ul class="flex items-center justify-evenly">
-          <li id="heading" class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-32"><a href="heading.html">Heading</a></li>
-          <li class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-48"><a href="workExperience.html">Work History</a></li>
-          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-rose-400 hover:text-2xl hover:w-36"><a href="education.html">Education</a></li>
-          <li class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-20"><a href="skill.html">Skill</a></li>
-          <li class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36"><a href="summary.html">Summary</a></li>
-          <li class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-72"><a href="review.html">Review and Download</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px] pt-20">
-        <div class="mt-8 flex items-center justify-between">
-            <div class="ml-5">
-                <p class="text-3xl font-bold lg:text-4xl">Education</p>
-                <p class="mt-4 text-xl font-semibold lg:text-xl">Here add your academics details</p>
+    <button id="cancelPreview" class="h-[840px] w-[1519px] absolute z-10 hidden" onclick="preview1()"></button>
+
+    <div id="oneandall" class="grad w-full h-full">
+        <nav
+            class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-2 yellow-border md:w-full lg:h-16 fixed top-0 shadow-xl">
+            <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a
+                    href="workExperience.html">&larr;</a></div>
+            <div class="mx-auto flex h-10 w-48 items-center justify-center rounded-xl text-xl font-bold hover:bg-white lg:hidden"
+                onclick="open1()">Education</div>
+            <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a
+                    href="skill.html">&rarr;</a></div>
+            <span id="miniWindow"
+                class="mx-auto absolute bg-white w-60 top-0 h-60 left-[50%] translate-x-[-50%] yellow-lite  yellow-border lg:hidden rounded-xl shadow-2xl hidden">
+                <ul class="flex-col items-center px-4">
+                    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="heading.html"
+                            class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Heading</a></li>
+                    <li class="lg:text-xl font-bold flex justify-center mt-3"><a href="workExperience.html"
+                            class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Work History</a></li>
+                    <li class="lg:text-xl font-bold flex justify-center mt-3 text-2xl "><a href="education.html"
+                            class="hover:bg-white hover:px-5 hover:py-2 rounded-xl" onclick="open1()">Education</a></li>
+                    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="skill.html"
+                            class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Skill</a></li>
+                    <li class="lg:text-xl font-bold flex justify-center mt-3 "><a href="summary.html"
+                            class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Summary</a></ary< /li>
+                    <li class="lg:text-xl font-bold flex justify-center my-3 "><a href="review.html"
+                            class="hover:bg-white hover:px-5 hover:py-2 rounded-xl">Review and Download</a></li>
+                </ul>
+            </span>
+
+            <div class="hide m-4 flex items-center justify-self-center lg:w-48">
+                <img src="/" alt="w-name" class="hide flex h-14 w-16 items-center justify-center bg-white" />
+                <p class="hide ml-4 flex h-8 w-32 items-center justify-center rounded-xl bg-white font-bold">website
+                    name</p>
             </div>
-            <button class="mr-4 h-11 w-12 rounded-xl border-2 border-white font-bold hover:bg-white hover:text-pink-300 md:hidden" onclick="preview1()">p</button>
-        <button class="hide2 mr-4 h-10 rounded-xl border-2 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden" onclick="preview1()">preview</button>
-        <button class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold" onclick="preview1()">preview</button>
-      </div>
-
-      <!-- school -->
-        <div class="mt-10 w-full border-4 transparent-yellow border-white rounded-xl" id="schoolDivAll">
-            <!-- <div class="bg-white w-40 h-14 flex justify-center items-center ml-5 mt-5 rounded-xl"><p class="ml-2 text-xl dark-yellow-text font-bold lg:text-4xl">School</p></div> -->
-
-            <!-- Small Screens -->
-            <div class="mt-5 flex justify-center lg:hidden" id="">
-                <input type="text" name="Name" id="Name" placeholder="Name"
-                    class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
+            <div class="hide lg:w-[800px]">
+                <ul class="flex items-center justify-evenly">
+                    <li id="heading"
+                        class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-32">
+                        <a href="heading.html">Heading</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-36 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-48">
+                        <a href="workExperience.html">Work History</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white lg:text-2xl hover:text-rose-400 hover:text-2xl hover:w-36">
+                        <a href="education.html">Education</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-20 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-20">
+                        <a href="skill.html">Skill</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-24 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-36">
+                        <a href="summary.html">Summary</a>
+                    </li>
+                    <li
+                        class="flex h-9 w-52 cursor-pointer items-center justify-center rounded-xl font-bold hover:bg-white hover:text-rose-400 hover:text-2xl hover:w-72">
+                        <a href="review.html">Review and Download</a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="mt-6 flex justify-center lg:hidden">
-                <input type="text" name="City" id="City" placeholder="City"
-                    class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
-            </div>
-
-            <div class="mt-6 flex justify-center lg:hidden">
-                <input type="text" name="State" id="State" placeholder="State"
-                    class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
-            </div>
-
-            <div class="mt-6 flex justify-center lg:hidden">
-                <select name="cars" id="cars"
-                    class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 text-gray-400 md:w-[640px]">
-                    <option value="Degree">Degree</option>
-                    <option value="Class 10">Class 10</option>
-                    <option value="Class 12">Class 12</option>
-                </select>
-            </div>
-
-            <div class="mt-6 flex justify-center lg:hidden">
-                <input type="text" name="Field of Study" id="Field of Study" placeholder="Field of Study"
-                    class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
-            </div>
-
-            <div class="mt-6 flex justify-center lg:hidden">
-                <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
-                    class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
-            </div>
-
-            <!-- Large Screen -->
-
-
-            <div class="justify-evenly lg:flex lg:flex-col">
-                <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
-                    <div>
-
-                        <label for="Name" class="lg:text-2xl lg:font-semibold">Name</label><br />
-                        <input type="text" name="Name" id="Name" placeholder="Name"
-                            class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
-                    </div>
-
-                    <div>
-                        <label for="City" class="lg:text-2xl lg:font-semibold">City</label><br />
-                        <input type="text" name="City" id="City" placeholder="City"
-                            class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
-                    </div>
-
+        </nav>
+        <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px] pt-20">
+            <div class="mt-8 flex items-center justify-between">
+                <div class="ml-5">
+                    <p class="text-3xl font-bold lg:text-4xl">Education</p>
+                    <p class="mt-4 text-xl font-semibold lg:text-xl">Here add your academics details</p>
                 </div>
-                <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
-
-                    <div>
-                        <label for="Name" class="lg:text-2xl lg:font-semibold">State</label><br />
-                        <input type="text" name="State" id="State" placeholder="State"
-                            class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
-                    </div>
-
-                    <div>
-                        <label for="Degree" class="lg:text-2xl lg:font-semibold">Degree</label><br />
-                        <select name="cars" id="cars"
-                            class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl lg:text-gray-400">
-                            <option value="Degree">Degree</option>
-                            <option value="Class 10">Class 10</option>
-                            <option></option>
-                            <option value="Class 12">Class 12</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
-
-                    <div>
-                        <label for="Name" class="lg:text-2xl lg:font-semibold">Field Of Study</label><br />
-                        <input type="text" name="Field Of Study" id="Field Of Study" placeholder="Field Of Study"
-                            class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
-                    </div>
-
-                    <div>
-                        <label for="City" class="lg:text-2xl lg:font-semibold">Passing Year</label><br />
-                        <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
-                            class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
-                    </div>
-
-                </div>
+                <button
+                    class="mr-4 h-11 w-12 rounded-xl border-2 border-white font-bold hover:bg-white hover:text-pink-300 md:hidden"
+                    onclick="preview1()">p</button>
+                <button
+                    class="hide2 mr-4 h-10 rounded-xl border-2 border-white text-lg font-bold hover:bg-white hover:text-pink-300 md:w-28 lg:hidden"
+                    onclick="preview1()">preview</button>
+                <button
+                    class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold"
+                    onclick="preview1()">preview</button>
             </div>
 
-            <div class="mt-9 flex ml-5 mb-5">
-                <button class="w-7 border-2 border-white rounded-xl" onclick="AddNewField()"></button>
+            <!-- school -->
+            <div id="div1" class="mt-10 w-full border-4 transparent-yellow border-white rounded-xl">
+                <!-- <div class="bg-white w-40 h-14 flex justify-center items-center ml-5 mt-5 rounded-xl"><p class="ml-2 text-xl dark-yellow-text font-bold lg:text-4xl">School</p></div> -->
+
+                <!-- Small Screens -->
+                <div id="sdiv1" class="mt-5 flex justify-center lg:hidden">
+                    <input type="text" name="Name" id="sName1" placeholder="Name"
+                        class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
+                </div>
+
+                <div id="sdiv2" class="mt-6 flex justify-center lg:hidden">
+                    <input type="text" name="City" id="sCity1" placeholder="City"
+                        class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
+                </div>
+
+                <div id="sdiv3" class="mt-6 flex justify-center lg:hidden">
+                    <input type="text" name="State" id="sState1" placeholder="State"
+                        class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
+                </div>
+
+                <div id="sdiv4" class="mt-6 flex justify-center lg:hidden">
+                    <select name="degree" id="sDegree1"
+                        class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 bg-white md:w-[640px]">
+                        <option value="Degree">Degree</option>
+                        <option value="HighSchool">High School</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="Masters">Masters</option>
+                    </select>
+                </div>
+
+                <div id="sdiv5" class="mt-6 flex justify-center lg:hidden">
+                    <input type="text" name="Field of Study" id="sField-of-Study1" placeholder="Field of Study"
+                        class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
+                </div>
+
+                <div id="sdiv6" class="mt-6 flex justify-center lg:hidden">
+                    <input type="text" name="Passing Year" id="sPassing-Year1" placeholder="Passing Year"
+                        class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
+                </div>
+
+                <!-- Large Screen -->
+
+                <div id="ldiv1" class="justify-evenly lg:flex lg:flex-col mb-5">
+                    <!-- <div class="hide lg:mt-5 lg:flex lg:justify-end mr-5"> <button id="lbutton1" class="h-8 w-8"
+                            onclick="close2()"><img src="delete.png" alt="" srcset=""></button>
+                    </div> -->
+                    <div id="ldiv1-1" class="hide lg:mt-8 lg:flex lg:justify-evenly">
+                        <div id="ldiv1-1-1">
+
+                            <label id="lname-label1" for="Name" class="lg:text-2xl lg:font-semibold">Name</label><br />
+                            <input type="text" name="Name" id="lName1" placeholder="Name"
+                                class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
+                        </div>
+
+                        <div id="ldiv1-1-2">
+                            <label id="lCity-label1" for="City" class="lg:text-2xl lg:font-semibold">City</label><br />
+                            <input type="text" name="City" id="lCity1" placeholder="City"
+                                class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
+                        </div>
+
+                    </div>
+                    <div id="ldiv1-2" class="hide lg:mt-8 lg:flex lg:justify-evenly">
+
+                        <div id="ldiv1-2-1">
+                            <label id="lState-label1" for="Name" class="lg:text-2xl lg:font-semibold">State</label><br />
+                            <input type="text" name="State" id="lState1" placeholder="State"
+                                class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
+                        </div>
+
+                        <div id="ldiv1-2-2">
+                            <label id="ldegree-label1" for="Degree" class="lg:text-2xl lg:font-semibold">Degree</label><br />
+                            <select name="degree" id="lDegree1"
+                                class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl bg-white">
+                                <option class="lg:text-gray-400" value="Degree">Degree</option>
+                                <option value="HighSchool">High School</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Bachelors">Bachelors</option>
+                                <option value="Masters">Masters</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div id="ldiv1-3" class="hide lg:mt-8 lg:flex lg:justify-evenly">
+
+                        <div id="ldiv1-3-1">
+                            <label id="lField-Of-Study-label1" for="Name" class="lg:text-2xl lg:font-semibold">Field Of Study</label><br />
+                            <input type="text" name="Field Of Study" id="lField-Of-Study1" placeholder="Field Of Study"
+                                class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
+                        </div>
+
+                        <div id="ldiv1-3-2">
+                            <label id="lPassing-Year-label1" for="City" class="lg:text-2xl lg:font-semibold">Passing Year</label><br />
+                            <input type="text" name="Passing Year" id="lPassing-Year1" placeholder="Passing Year"
+                                class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="AddBtn" class="mt-9 flex ml-5">
+                <button class="w-7 rounded-xl" onclick="AddNewField()"><img src="add.png" alt="" srcset=""></button>
                 <p class="md:text-xl md:font-semibold lg:text-xl ml-4">Add another qualification</p>
             </div>
 
-        </div>
+            <!-- college -->
+            <!-- <div class="mt-20 w-full border-4 transparent-pink border-white rounded-xl">
+            <div class="bg-white w-40 h-14 flex justify-center items-center ml-5 mt-5 rounded-xl"><p class="ml-2 text-xl dark-pink-text font-bold lg:text-4xl">College</p></div>
 
-        <!-- college -->
-        <div class="mt-20 w-full border-4 transparent-pink border-white rounded-xl">
-            <!-- <div class="bg-white w-40 h-14 flex justify-center items-center ml-5 mt-5 rounded-xl"><p class="ml-2 text-xl dark-pink-text font-bold lg:text-4xl">College</p></div> -->
-
-            <!-- Small Screens -->
+            Small Screens
             <div class="mt-5 flex justify-center lg:hidden">
                 <input type="text" name="Name" id="Name" placeholder="Name"
                     class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
@@ -180,6 +220,16 @@
                     class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
             </div>
             <div class="mt-6 flex justify-center lg:hidden">
+                <select name="degree" id="degree"
+                    class="h-16 w-[500px] border-2 border-white rounded-xl pl-2  md:w-[640px]">
+                    <option value="Degree">Degree</option>
+                    <option value="HighSchool">High School</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                </select>
+            </div>
+            <div class="mt-6 flex justify-center lg:hidden">
                 <input type="text" name="Field of Study" id="Field of Study" placeholder="Field of Study"
                     class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
             </div>
@@ -188,7 +238,7 @@
                     class="h-16 w-[500px] border-2 border-white rounded-xl pl-2 md:w-[640px]" />
             </div>
 
-            <!-- Large Screen -->
+            Large Screen
             <div class="justify-evenly lg:flex lg:flex-col">
                 <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
                     <div>
@@ -209,12 +259,23 @@
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                     </div>
                     <div>
+                        <label for="Degree" class="lg:text-2xl lg:font-semibold">Degree</label><br />
+                        <select name="degree" id="degree"
+                            class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl lg:">
+                            <option value="Degree">Degree</option>
+                            <option value="HighSchool">High School</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Bachelors">Bachelors</option>
+                            <option value="Masters">Masters</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
+                    <div>
                         <label for="Name" class="lg:text-2xl lg:font-semibold">Field Of Study</label><br />
                         <input type="text" name="Field Of Study" id="Field Of Study" placeholder="Field Of Study"
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                     </div>
-                </div>
-                <div class="hide lg:mt-8 lg:flex lg:ml-16 ">
                     <div>
                         <label for="City" class="lg:text-2xl lg:font-semibold">Passing Year</label><br />
                         <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
@@ -227,15 +288,20 @@
                 <button class="w-7 border-2 border-white rounded-xl"></button>
                 <p class="md:text-xl md:font-semibold lg:text-xl ml-4">Add another qualification</p>
             </div>
-        </div>
-    </main>
+        </div> -->
+        </main>
         <div class="mt-5 flex justify-between border-t-4 border-white transparent-orange rounded-xl" id="btnsec">
-        <a href="workExperience.html"><button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="backbtn" type="button" target="_blank">&larr; Back</button></a>
-        <a href="skill.html"><button class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400" id="nextbtn" type="button" target="_blank">Next &rarr;</button></a>
-      </div>
+            <a href="workExperience.html"><button
+                    class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400"
+                    id="backbtn" type="button" target="_blank">&larr; Back</button></a>
+            <a href="skill.html"><button
+                    class="hide border-4 border-white rounded-xl lg:h-14 lg:w-36 lg:text-2xl lg:font-bold my-6 mx-10 hover:bg-white hover:text-orange-400"
+                    id="nextbtn" type="button" target="_blank">Next &rarr;</button></a>
+        </div>
     </div>
 </body>
 <script src="education.js"></script>
 <script src="script0.js"></script>
+<script src="iframeResizer.min.js"></script>
 
 </html>

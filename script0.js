@@ -54,20 +54,18 @@ function generateResume() {
     localStorage.setItem("PhoneNumber", PhoneNumber);
     const Email = document.getElementById('Email').value;
     localStorage.setItem("Email", Email);
-
-    
     const semployeerOB = document.getElementById(semployeer()).value;
     localStorage.setItem("semployeer", semployeerOB);
-    const sjobtitle = document.getElementById(sjobtitle()).value;
-    localStorage.setItem(sjobtitle(), "sjobtitle");
-    const lemployeer = document.getElementById(lemployeer()).value;
-    localStorage.setItem(lemployeer(), lemployeer);
-    const ljob_title = document.getElementById(ljob_title()).value;
-    localStorage.setItem(ljob_title(), ljob_title);
-    const startdate = document.getElementById(startdate()).value;
-    localStorage.setItem(startdate(), startdate);
-    const enddate = document.getElementById(enddate()).value;
-    localStorage.setItem(enddate(), enddate);
+    const sjobtitleOB = document.getElementById(sjobtitle()).value;
+    localStorage.setItem(sjobtitle(), sjobtitleOB);
+    const lemployeerOB = document.getElementById(lemployeer()).value;
+    localStorage.setItem(lemployeer(), lemployeerOB);
+    const ljob_titleOB = document.getElementById(ljob_title()).value;
+    localStorage.setItem(ljob_title(), ljob_titleOB);
+    const startdateOB = document.getElementById(startdate()).value;
+    localStorage.setItem(startdate(), startdateOB);
+    const enddateOB = document.getElementById(enddate()).value;
+    localStorage.setItem(enddate(), enddateOB);
     fun();
 
 
@@ -83,10 +81,10 @@ function fun() {
     document.getElementById('mailt1').innerText = localStorage.getItem('Email');
 
 
-    document.getElementById('mailt1').innerText = localStorage.getItem('semployeer');
-    document.getElementById('mailt1').innerText = localStorage.getItem('sjobtitle');
-    document.getElementById('mailt1').innerText = localStorage.getItem('lemployeer');
-    document.getElementById('mailt1').innerText = localStorage.getItem('ljob_title');
-    document.getElementById('startdate').innerText = localStorage.getItem('startdate');
-    document.getElementById('mailt1').innerText = localStorage.getItem('enddate');
+    // document.getElementById('mailt1').innerText = localStorage.getItem('semployeer');
+    // document.getElementById('mailt1').innerText = localStorage.getItem('sjobtitle');
+    // document.getElementById('mailt1').innerText = localStorage.getItem('lemployeer');
+    // document.getElementById('mailt1').innerText = localStorage.getItem('ljob_title');
+    // document.getElementById('startdate').innerText = localStorage.getItem('startdate');
+    // document.getElementById('mailt1').innerText = localStorage.getItem('enddate');
 }
