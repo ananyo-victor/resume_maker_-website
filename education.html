@@ -79,7 +79,7 @@
                 </ul>
             </div>
         </nav>
-        <main class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px] pt-20">
+        <main id="main" class="mx-auto max-w-[590px] md:max-w-[680px] lg:max-w-[1200px] pt-20">
             <div class="mt-8 flex items-center justify-between">
                 <div class="ml-5">
                     <p class="text-3xl font-bold lg:text-4xl">Education</p>
@@ -144,15 +144,15 @@
                             onclick="close2()"><img src="delete.png" alt="" srcset=""></button>
                     </div> -->
                     <div id="ldiv1-1" class="hide lg:mt-8 lg:flex lg:justify-evenly">
-                        <div id="ldiv1-1-1">
+                        <div id="ldiv1-1-1" class="lg:flex lg:flex-col">
 
-                            <label id="lname-label1" for="Name" class="lg:text-2xl lg:font-semibold">Name</label><br />
+                            <label id="lname-label1" for="Name" class="lg:text-2xl lg:font-semibold">Name</label>
                             <input type="text" name="Name" id="lName1" placeholder="Name"
                                 class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                         </div>
 
-                        <div id="ldiv1-1-2">
-                            <label id="lCity-label1" for="City" class="lg:text-2xl lg:font-semibold">City</label><br />
+                        <div id="ldiv1-1-2" class="lg:flex lg:flex-col">
+                            <label id="lCity-label1" for="City" class="lg:text-2xl lg:font-semibold">City</label>
                             <input type="text" name="City" id="lCity1" placeholder="City"
                                 class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                         </div>
@@ -160,14 +160,14 @@
                     </div>
                     <div id="ldiv1-2" class="hide lg:mt-8 lg:flex lg:justify-evenly">
 
-                        <div id="ldiv1-2-1">
-                            <label id="lState-label1" for="Name" class="lg:text-2xl lg:font-semibold">State</label><br />
+                        <div id="ldiv1-2-1" class="lg:flex lg:flex-col">
+                            <label id="lState-label1" for="Name" class="lg:text-2xl lg:font-semibold">State</label>
                             <input type="text" name="State" id="lState1" placeholder="State"
                                 class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                         </div>
 
-                        <div id="ldiv1-2-2">
-                            <label id="ldegree-label1" for="Degree" class="lg:text-2xl lg:font-semibold">Degree</label><br />
+                        <div id="ldiv1-2-2" class="lg:flex lg:flex-col">
+                            <label id="ldegree-label1" for="Degree" class="lg:text-2xl lg:font-semibold">Degree</label>
                             <select name="degree" id="lDegree1"
                                 class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl bg-white">
                                 <option class="lg:text-gray-400" value="Degree">Degree</option>
@@ -181,14 +181,14 @@
                     </div>
                     <div id="ldiv1-3" class="hide lg:mt-8 lg:flex lg:justify-evenly">
 
-                        <div id="ldiv1-3-1">
-                            <label id="lField-Of-Study-label1" for="Name" class="lg:text-2xl lg:font-semibold">Field Of Study</label><br />
+                        <div id="ldiv1-3-1" class="lg:flex lg:flex-col">
+                            <label id="lField-Of-Study-label1" for="Name" class="lg:text-2xl lg:font-semibold">Field Of Study</label>
                             <input type="text" name="Field Of Study" id="lField-Of-Study1" placeholder="Field Of Study"
                                 class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                         </div>
 
-                        <div id="ldiv1-3-2">
-                            <label id="lPassing-Year-label1" for="City" class="lg:text-2xl lg:font-semibold">Passing Year</label><br />
+                        <div id="ldiv1-3-2" class="lg:flex lg:flex-col">
+                            <label id="lPassing-Year-label1" for="City" class="lg:text-2xl lg:font-semibold">Passing Year</label>
                             <input type="text" name="Passing Year" id="lPassing-Year1" placeholder="Passing Year"
                                 class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                         </div>
@@ -197,8 +197,8 @@
                 </div>
 
             </div>
-            <div id="AddBtn" class="mt-9 flex ml-5">
-                <button class="w-7 rounded-xl" onclick="AddNewField()"><img src="add.png" alt="" srcset=""></button>
+            <div id="AddBtn1" class="mt-9 flex ml-5">
+                <button class="w-7 rounded-xl" onclick="AddField()"><img src="add.png" alt="" srcset=""></button>
                 <p class="md:text-xl md:font-semibold lg:text-xl ml-4">Add another qualification</p>
             </div>
 
@@ -242,24 +242,24 @@
             <div class="justify-evenly lg:flex lg:flex-col">
                 <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
                     <div>
-                        <label for="Name" class="lg:text-2xl lg:font-semibold">Name</label><br />
+                        <label for="Name" class="lg:text-2xl lg:font-semibold">Name</label>
                         <input type="text" name="Name" id="Name" placeholder="Name"
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                     </div>
                     <div>
-                        <label for="City" class="lg:text-2xl lg:font-semibold">City</label><br />
+                        <label for="City" class="lg:text-2xl lg:font-semibold">City</label>
                         <input type="text" name="City" id="City" placeholder="City"
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                     </div>
                 </div>
                 <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
                     <div>
-                        <label for="Name" class="lg:text-2xl lg:font-semibold">State</label><br />
+                        <label for="Name" class="lg:text-2xl lg:font-semibold">State</label>
                         <input type="text" name="State" id="State" placeholder="State"
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                     </div>
                     <div>
-                        <label for="Degree" class="lg:text-2xl lg:font-semibold">Degree</label><br />
+                        <label for="Degree" class="lg:text-2xl lg:font-semibold">Degree</label>
                         <select name="degree" id="degree"
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl lg:">
                             <option value="Degree">Degree</option>
@@ -272,12 +272,12 @@
                 </div>
                 <div class="hide lg:mt-8 lg:flex lg:justify-evenly">
                     <div>
-                        <label for="Name" class="lg:text-2xl lg:font-semibold">Field Of Study</label><br />
+                        <label for="Name" class="lg:text-2xl lg:font-semibold">Field Of Study</label>
                         <input type="text" name="Field Of Study" id="Field Of Study" placeholder="Field Of Study"
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                     </div>
                     <div>
-                        <label for="City" class="lg:text-2xl lg:font-semibold">Passing Year</label><br />
+                        <label for="City" class="lg:text-2xl lg:font-semibold">Passing Year</label>
                         <input type="text" name="Passing Year" id="Passing Year" placeholder="Passing Year"
                             class="w-[500px] border-2 border-white rounded-xl pl-2 h-16 lg:mt-3 lg:h-16 lg:text-xl" />
                     </div>
