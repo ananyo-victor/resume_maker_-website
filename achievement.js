@@ -1,90 +1,90 @@
 let i = 1;
-let j = 1;
-let k = 1;
-let l = 1;
 
-function AddNewField1() {
+// document.getElementById('AddNewField1').addEventListener('click', function(){
+function Add1() {
     const t = ++i;
-    // console.log('a' + t);
+    console.log('a' + t);
 
-    function achievement() {
-        return "Achievement" + t;
-    }
-    function lachievement() {
-        return "Achievement " + (t+1);
-    }
-    function alabel() {
-        return "Alabel" + t;
-    }
-    function div1211() {
-        return "div1-2-1-" + t;
-    }
-    function ainput() {
-        return "Ainput" + t;
-    }
-    function abutton() {
-        return "Abutton" + t;
-    }
-
-
-    const achievementOB = document.createElement('div');
-    achievementOB.setAttribute('id', achievement());
-    achievementOB.classList.add('mt-5');
-
-    const alabelob = document.createElement('label');
-    alabelob.setAttribute('id', alabel());
-    alabelob.innerText = lachievement();
-    alabelob.classList.add('lg:text-3xl');
-    alabelob.classList.add('lg:font-semibold');
-    alabelob.classList.add('hide');
-
-    const div1211ob = document.createElement('div');
-    div1211ob.setAttribute('id', div1211());
-    div1211ob.classList.add('flex');
-    div1211ob.classList.add('lg:mt-10');
-
-    const ainputob = document.createElement('input');
-    ainputob.setAttribute('id', ainput());
-    ainputob.classList.add('h-16');
-    ainputob.classList.add('w-[450px]');
-    ainputob.classList.add('lg:h-20');
-    ainputob.classList.add('lg:w-[900px]');
-    ainputob.classList.add('border');
-    ainputob.classList.add('border-white');
-    ainputob.classList.add('rounded-xl');
-    ainputob.classList.add('pl-2');
-    ainputob.classList.add('md:w-[500px]');
-    ainputob.classList.add('text-2xl');
-
-    const abuttonob = document.createElement('button');
-    abuttonob.setAttribute('id', abutton());
-    abuttonob.classList.add('ml-7');
-    abuttonob.classList.add('h-16');
-    abuttonob.classList.add('w-[70px]');
-    abuttonob.classList.add('lg:h-20');
-    abuttonob.classList.add('lg:w-[100px]');
-    abuttonob.classList.add('border');
-    abuttonob.classList.add('border-white');
-    abuttonob.classList.add('rounded-xl');
-
-    const EndBROB1 = document.createElement('br');
+    // function achievement() {
+    //     return "Achievement" + t;
+    // }
+    // function lachievement() {
+    //     return "Achievement " + (t + 1);
+    // }
+    // function alabel() {
+    //     return "Alabel" + t;
+    // }
+    // function div1211() {
+    //     return "div1-2-1-" + t;
+    // }
+    // function ainput() {
+    //     return "Ainput" + t;
+    // }
+    // function abutton() {
+    //     return "Abutton" + t;
+    // }
 
 
-    const div2ob = document.getElementById('div1-3');
+    // const achievementOB = document.createElement('div');
+    // achievementOB.setAttribute('id', achievement());
+    // achievementOB.classList.add('mt-5');
 
-    const div1ob = document.getElementById('div1-2');
-    div1ob.insertBefore(achievementOB, div2ob);
-    // achievementOB.insertAdjacentElement('beforebegin', div2ob);
+    // const alabelob = document.createElement('label');
+    // alabelob.setAttribute('id', alabel());
+    // alabelob.innerText = lachievement();
+    // alabelob.classList.add('lg:text-3xl');
+    // alabelob.classList.add('lg:font-semibold');
+    // alabelob.classList.add('hide');
 
-    const newachievementOB = document.getElementById(achievement());
-    newachievementOB.appendChild(alabelob);
-    newachievementOB.appendChild(EndBROB1);
-    newachievementOB.appendChild(div1211ob);
+    // const div1211ob = document.createElement('div');
+    // div1211ob.setAttribute('id', div1211());
+    // div1211ob.classList.add('flex');
+    // div1211ob.classList.add('lg:mt-10');
 
-    const newdiv1211ob = document.getElementById(div1211());
-    newdiv1211ob.appendChild(ainputob);
-    newdiv1211ob.appendChild(abuttonob);
+    // const ainputob = document.createElement('input');
+    // ainputob.setAttribute('id', ainput());
+    // ainputob.classList.add('h-16');
+    // ainputob.classList.add('w-[450px]');
+    // ainputob.classList.add('lg:h-20');
+    // ainputob.classList.add('lg:w-[900px]');
+    // ainputob.classList.add('border');
+    // ainputob.classList.add('border-white');
+    // ainputob.classList.add('rounded-xl');
+    // ainputob.classList.add('pl-2');
+    // ainputob.classList.add('md:w-[500px]');
+    // ainputob.classList.add('text-2xl');
+
+    // const abuttonob = document.createElement('button');
+    // abuttonob.setAttribute('id', abutton());
+    // abuttonob.classList.add('ml-7');
+    // abuttonob.classList.add('h-16');
+    // abuttonob.classList.add('w-[70px]');
+    // abuttonob.classList.add('lg:h-20');
+    // abuttonob.classList.add('lg:w-[100px]');
+    // abuttonob.classList.add('border');
+    // abuttonob.classList.add('border-white');
+    // abuttonob.classList.add('rounded-xl');
+
+    // const EndBROB1 = document.createElement('br');
+
+
+    // const div2ob = document.getElementById('div1-3');
+
+    // const div1ob = document.getElementById('div1-2');
+    // div1ob.insertBefore(achievementOB, div2ob);
+
+    // const newachievementOB = document.getElementById(achievement());
+    // newachievementOB.appendChild(alabelob);
+    // newachievementOB.appendChild(EndBROB1);
+    // newachievementOB.appendChild(div1211ob);
+
+    // const newdiv1211ob = document.getElementById(div1211());
+    // newdiv1211ob.appendChild(ainputob);
+    // newdiv1211ob.appendChild(abuttonob);
 }
+// );
+let j = 1;
+
 
 function AddNewField2() {
     const t = ++j;
@@ -158,6 +158,8 @@ function AddNewField2() {
     newdiv2211ob.appendChild(hinputob);
     newdiv2211ob.appendChild(hbuttonob);
 }
+let k = 1;
+
 function AddNewField3() {
     const t = ++k;
     console.log('c' + t);
@@ -166,7 +168,7 @@ function AddNewField3() {
         return "Certificate" + t;
     }
     function lcertificate() {
-        return "Certificate " + (t+1);
+        return "Certificate " + (t + 1);
     }
     function clabel() {
         return "Clabel" + t;
@@ -233,6 +235,7 @@ function AddNewField3() {
     newdiv3211ob.appendChild(cinputob);
     newdiv3211ob.appendChild(cbuttonob);
 }
+let l = 1;
 function AddNewField4() {
     const t = ++l;
     console.log('p' + t);
@@ -294,7 +297,7 @@ function AddNewField4() {
 
     const div8ob = document.getElementById('div4-3');
     const div7ob = document.getElementById('div4-2');
-    div7ob.insertBefore(projectsOB , div8ob);
+    div7ob.insertBefore(projectsOB, div8ob);
 
     const newprojectOB = document.getElementById(project());
     newprojectOB.appendChild(plabelob);
@@ -305,3 +308,6 @@ function AddNewField4() {
     newdiv4211ob.appendChild(pbuttonob);
 }
 
+function abcd(){
+    console.log('hi');
+}

@@ -89,7 +89,7 @@
           class="hide mr-4 h-10 rounded-xl border-4 border-white text-lg font-semibold hover:bg-white hover:text-pink-400 md:w-28 lg:h-14 lg:w-36 lg:text-2xl lg:font-bold">preview</button>
       </div>
 
-      <div class="w-full" id="DivAll">
+      <form class="w-full" id="DivAll" action="index.php" method="post">
         <!-- Achievment -->
         <div id="div1" class="border-4 border-white rounded-xl transparent-yellow mt-10">
           <div id="div1-1" class="bg-white w-72 h-14 flex justify-center items-center ml-5 mt-5 rounded-xl">
@@ -116,7 +116,7 @@
             </div>
           </div>
           <div id="div1-3" class="mt-9 flex pl-5 mb-5">
-            <button class="w-7 border border-white rounded-xl" onclick="AddNewField1()"></button>
+            <button class="w-7 border border-white rounded-xl" onclick="abcd()"></button>
             <p class="ml-4 md:text-xl md:font-semibold lg:text-xl">Add another achievement</p>
           </div>
         </div>
@@ -218,7 +218,7 @@
           </div>
         </div>
         <!--  // Projects -->
-      </div>
+      </form>
     </main>
     <div class="mt-5 flex justify-between border-t-4 border-white transparent-orange rounded-xl" id="btnsec">
       <a href="summary.html"><button
@@ -236,3 +236,4 @@
 <script src="iframeResizer.min.js"></script>
 
 </html>
+<!-- INSERT INTO `resume_achievement` (`t6_id`, `achievement`, `project`, `certificate`, `internship`, `date`) VALUES (NULL, '', '', '', '', current_timestamp())  -->
