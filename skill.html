@@ -11,13 +11,27 @@
 </head>
 
 <body>
-  <div id="preview" class="absolute left-[50%] translate-x-[-50%] w-[900px] h-[1200px] bg-white z-20 top-9 hidden">
+  <div id="preview" class="absolute left-[50%] translate-x-[-50%] w-[790px] h-[1100px] bg-white z-20 top-9 hidden">
     <div><iframe src="temp1.html" class="h-[1200px] w-full" frameborder="0"></iframe></div>
   </div>
 
+  
   <button id="cancelPreview" class="h-[840px] w-[1519px] absolute z-10 hidden" onclick="preview1()"></button>
-
-  <div id="oneandall" class="grad w-full h-screen ">
+  <div id="alertMessage" class="absolute left-[50%] top-[50%] z-20 h-[40vh] w-[60vw] translate-x-[-50%] translate-y-[-50%] rounded-2xl bg-white hidden">
+    <div class="flex h-full flex-col justify-between">
+      <div class="pl-7 pt-7">
+        <p class="text-[2.20rem] font-bold">Looks like you haven't filled this section</p>
+        <p class="text-[1.70rem] font-semibold">You have to fill this section for your skills</p>
+      </div>
+      <div class="flex justify-between px-16 pb-10">
+        <button class="border-2 border-black px-4 py-2 text-2xl font-semibold">I don't have any skills</button>
+        <button class="border-2 border-black px-4 py-2 text-2xl font-semibold">OK</button>
+      </div>
+    </div>
+  </div>
+  <button id="cancel1" class="absolute z-10 hidden h-[840px] w-[1519px]"></button>
+  
+  <div id="oneandall" class="grad w-full min-h-screen ">
     <nav
       class="yellow-lite flex h-16 w-full items-center justify-between rounded-xl border-4 yellow-border md:w-full lg:h-16 fixed top-0 shadow-xl">
       <div class="mx-auto flex h-7 w-9 items-center justify-center rounded-xl hover:bg-white lg:hidden"><a
@@ -164,8 +178,9 @@
     </div>
   </div>
 </body>
+<script src="iframeResizer.min.js"></script>
 <script src="skills.js"></script>
-<script src="script0.js"></script>
+<script type="text/javascript" src="script0.js"></script>
 
 </html>
 <!-- INSERT INTO `resume_skill` (`t4_id`, `Skill_name`, `Skilll_level`, `time`) VALUES (NULL, '', '', current_timestamp())  -->
